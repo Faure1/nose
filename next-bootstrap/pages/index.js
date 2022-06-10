@@ -11,9 +11,13 @@ import Footer from '../components/components/footer';
 
 export default function Home() {
   return (
-   <Layout>
-      <Body/>
-      <Footer/>
-   </Layout>
+    <div>
+    <Layout/>
+    <Body/>
+
+   
+
+    </div>
+
   )
 }
