@@ -11,18 +11,18 @@ const Layout = ({children}) => {
     return ( 
 
   <main>  
-    <Navbar collapseOnSelect expand="lg" sticky="top" className='color-navBar'bg='white'>
+    <Navbar collapseOnSelect expand="lg" sticky="top" bg='white'>
         <Container>
         <Nav.Link classname=''><Image  src='/assets/logo.PNG'  width={135} height={33} layout='intrinsic'/> </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav div-medio">
-            <Nav className="me-auto ">
+          <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
+            <Nav className="me-auto d-flex ">
               <Nav.Link  href="#quienes-somos">quienes somos</Nav.Link>
               <Nav.Link  href="#maquinarias">maquinarias</Nav.Link>
               <Nav.Link  href="#testimonios">testimonios</Nav.Link>
             </Nav>
             <Nav>
-            <Button variant="dark">contactanos</Button>
+            <Button className='d-inline' variant="dark">contactanos</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
