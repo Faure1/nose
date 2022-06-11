@@ -2,20 +2,21 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image'
 import {Button, Container, Row} from 'react-bootstrap'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
 const Body = ({children}) => {
+
+    
     return (  
         <main>
              <div className="hero col-12 " >
                  <Container >
                      <Row className='d-flex justify-content-center mediohero '>
                           <div>
-                               <h1 >Máquinas para el desarrollo</h1>
+                               <h1 className='quienes-somos' >Máquinas para el desarrollo</h1>
                           </div>
                      </Row>
                      <Row  className='d-flex justify-content-center mediohero  '>
@@ -114,20 +115,61 @@ const Body = ({children}) => {
 
 
 
-     <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} spaceBetween={50} slidesPerView={3} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}onSwiper={(swiper) => console.log(swiper)} onSlideChange={() => console.log('slide change')}>
-            <SwiperSlide>
-                <div className='primer-swiper'>
-                 <Image src='/assets/Frame962.png'  width={784} height={500} layout='intrinsic'></Image>
-                </div>
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-           ...
-     </Swiper>
+            <Container>
+            <div className='col-12 imagen-de-video'>
+               <Container className=' d-flex justify-content-center mediohero'>
+                <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' className='boton-video'> <Button   variant="light"> <Image src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
+                </Container>
+            </div>
+            </Container>
 
 
 
+
+
+            <Container className="margin-bottom-56px">
+                <Row>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 medio-altura2 mediohero">
+                        <div className='col-12'>
+                            <div>
+                            <h1 className='titulos-venta'>Excavadora CAT 336 ELH</h1>
+
+                            </div>
+                            <div className='d-flex'>
+                            <div className=' order-0 w-50'>
+                                    <p className='lado-izquierdo' >Año:</p>
+                                    <p className='lado-izquierdo'>Odómetro:</p>
+                                    <p className='lado-izquierdo'>Condición:</p>
+                                    
+                                    <p className='lado-izquierdo'>Precio:</p>
+                                </div>
+                                <div className='order-1 w-50 '>
+                                    <p className='lado-derecho'>2013</p>
+                                    <p>-</p>
+                                    <p className='lado-derecho'>usada,Perfecto estado.</p>
+                                    <p className='lado-derecho'>$145,000 USD</p>
+                                </div>
+                            </div>
+                            <div>
+                            <Button variant="dark">contactanos</Button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
+                        <div className="Cat-imagen">
+                            <div className='div-float'>
+                            <Image  src='/assets/Frame962.png'  width={180} height={54} layout='intrinsic'></Image>
+                            </div>
+                        </div>
+                    </div>
+                </Row>
+            </Container>
+
+
+
+ 
 
 
 
