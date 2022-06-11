@@ -114,20 +114,17 @@ const Body = ({children}) => {
 
 
 
-
-
-            <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} spaceBetween={50} slidesPerView={3} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}onSwiper={(swiper) => console.log(swiper)} onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>
-        <div className='primer-swiper'>
-        <Image src='/assets/Frame962.png'  width={784} height={500} layout='intrinsic'></Image>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
+     <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} spaceBetween={50} slidesPerView={3} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}onSwiper={(swiper) => console.log(swiper)} onSlideChange={() => console.log('slide change')}>
+            <SwiperSlide>
+                <div className='primer-swiper'>
+                 <Image src='/assets/Frame962.png'  width={784} height={500} layout='intrinsic'></Image>
+                </div>
+          </SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+           ...
+     </Swiper>
 
 
 
