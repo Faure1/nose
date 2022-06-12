@@ -4,13 +4,11 @@ import Image from 'next/image'
 import {Button, Container, Row} from 'react-bootstrap'
 import { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 
+const Body = () => {
 
-
-const Body = ({children}) => {
-
-    
     return (  
         <main>
 
@@ -181,6 +179,10 @@ const Body = ({children}) => {
                                 <div className='div-info-ado-izquierdo'>
                                    <p className='lado-izquierdo'>Precio:</p>
                                 </div>
+                                <div className='div-info-ado-izquierdo'>
+                                    <Button variant="dark">contactanos</Button>
+                      
+                                </div>
                             </div>
                                 <div className='order-1 div-lado-derecho'>
                                     <div className='div-info-lado-derecho'>
@@ -196,10 +198,6 @@ const Body = ({children}) => {
                                     <p className='lado-derecho'>  $145,000 USD</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                            <Button variant="dark">contactanos</Button>
-
                             </div>
                         </div>
 
@@ -232,9 +230,9 @@ const Body = ({children}) => {
             <div className='d-flex justify-content-center'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
-            <div className='quienes-somos-container-2'>
+            <div className='quienes-somos-container-2 mediohero '>
                 <p className=' d-flex justify-content-center '>¿Tienes un proyecto y necesitas maquinaria pesada de segunda mano?  </p>
-                <p className='text-dark d-flex justify-content-center'>¡Cuenta con nosotros! Te traemos la maquinaria deseada por flotas o individual desde Estados unidos o Europa. </p>
+                <p className='text-dark d-flex justify-content-center align-item-center'>¡Cuenta con nosotros! Te traemos la maquinaria deseada por flotas o individual desde Estados unidos o Europa. </p>
             </div>
             <div className='medio-altura'>
              <Button className=' justify-content-center ' variant="dark">contactanos</Button>
@@ -249,98 +247,329 @@ const Body = ({children}) => {
             <Container>
                 <Row>
                     <div className='col-lg-6 col-12'>
-                     <Image src='/assets/1-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h2 className='d-flex justify-content-center'>Retroescabadoras </h2>
+                        <Image src='/assets/1-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h3 className='d-flex justify-content-center color-h3'>Retroescabadoras </h3>
                     </div>
                     <div className='col-lg-6 col-12'>
-                    <Image src='/assets/2-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h2 className='d-flex justify-content-center'>Excavadoras </h2> 
+                        <Image src='/assets/2-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h3 className='d-flex justify-content-center color-h3'>Excavadoras </h3> 
                     </div>
                 </Row>
                 <Row >
                     <div className='col-lg-6 col-12 conseguimos-imagenes'>
-                    <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h2 className='d-flex justify-content-center'>Tractor oruga </h2> 
+                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h3 className='d-flex justify-content-center color-h3'>Tractor oruga </h3> 
                     </div>
                     <div className='col-lg-6 col-12 conseguimos-imagenes'>
-                    <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h2 className='d-flex justify-content-center'>Mini cargador </h2> 
+                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h3 className='color-h3 d-flex justify-content-center '>Mini cargador </h3> 
                     </div>
                 </Row>
             </Container>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <Container className='espacio-arriba-muchomas'>
-                <Row>
+            <Container className='espacio-arriba-muchomas mediohero '>
                     <div >
-                        <h2 className="text-dark d-flex justify-content-center ">y mucho más</h2>
+                        <h2 className="text-dark d-flex justify-content-center y-mucho-mas">Y mucho más</h2>
                     </div>
+                <Row>
+                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Rodillo compactador</p> 
+                    </div>
+                    <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Dumper</p> 
+                </div>
+                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Hormigonera todo terreno</p> 
+                </div>
+                    <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Camion bomba de hormigon </p> 
+                </div>
+                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Camiones volquetes articulados </p> 
+                </div>
+                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
+                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
+                </div>
                 </Row>
             </Container>
 
+
+
+
+
+
+
+        {/* Marcas comerciales*/}
+        <div >
+            <h1 className="text-dark d-flex justify-content-center quienes-somos">Marcas comerciales</h1>
+        </div>
+        <div className='d-flex justify-content-center padding'>
+            <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+        </div>
             
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* Marcas comerciales*/}
-
-            <div >
-                <h1 className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
+        <Swiper
+         slidesPerView={10}
+         loop={true}
+         spaceBetween={30}
+         centeredSlides={true}
+         
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false
+        }}
+        modules={[Autoplay ]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/log-holland.png'  width={186} height={116} layout='intrinsic'></Image>
             </div>
-            <div className='d-flex justify-content-center'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-bobcat.png'  width={186} height={116} layout='intrinsic'></Image>
             </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-case.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-cat.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-caterpillar.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-doosan.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-hitachi.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-hyundai.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-jcb.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-joh-deere.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-jomatsu.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-kubota.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-liebherr.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/logo-volvo.png'  width={186} height={116} layout='intrinsic'></Image>
+            </div>
+        </SwiperSlide>
+      </Swiper>
 
 
 
 
-            {/* Marcas comerciales*/}
+
+      
+        {/* Recien vendida*/}
+        <div >
+            <h1 className="text-dark d-flex justify-content-center quienes-somos">Recien vendida</h1>
+        </div>
+        <div className='d-flex justify-content-center padding'>
+            <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+        </div>
+
+
+
+
+        {/* Recien vendida container*/}
+
+        <Container className="margin-bottom-56px">
+                <Row className=''>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 mediohero-info">
+                        <div className='col-12 '>
+                            <div>
+                            <h1 className='titulos-venta'>Retroexcavadora CASE  570MXT 4x4 cargador basculante</h1>
+                            </div>
+                            <div className='d-flex texto-de-info-medio'>
+                            <div className=' order-0 w-20'>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo' >Año:</p>
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Odómetro:</p>   
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Condición:</p>
+                                </div>    
+                                <div className='div-info-ado-izquierdo'>
+                                   <p className='lado-izquierdo'>Precio:</p>
+                                </div>
+                                <div>
+                                    <h2 className='titulos-venta'>Vendido</h2>
+                                </div>
+                                
+ 
+                            </div>
+                                <div className='order-1 div-lado-derecho'>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>  2011</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>4,300 horas</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                        <p className='lado-derecho'>  usada,Perfecto estado.</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>  $55,000 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
+                        <div className="vendido-imagen">
+                            <div className='div-float2'>
+                            <Image  src='/assets/logo-vendido.png'  width={158} height={161} layout='intrinsic'></Image>
+                            </div>
+                        </div>
+                    </div>
+                </Row>
+            </Container>
+
+
+
+
+
+
+                  
+        {/* testimonios*/}
+        <div >
+            <h1 className="text-dark d-flex justify-content-center quienes-somos">Testimonios</h1>
+        </div>
+        <div className='d-flex justify-content-center padding'>
+            <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+        </div>
+        <div className='d-flex justify-content-center'>
+            <h2 className='andrea'>Andrea</h2>
+        </div>
+
+
+
+
+
+
+
+        <Container>
+            <Row>
+                <div className=' d-flex justify-content-center'>
+                    <div  >
+                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                    </div>
+                    <div className='espacio-8' >
+                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                    </div>
+                    <div >
+                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                    </div>
+                    <div className='espacio-8' >
+                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                    </div>
+                    <div >
+                        <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                    </div>
+                </div>
+
+            </Row>
+        </Container>
+        
+        
+ 
+        <div className=' d-flex justify-content-center mediohero align-item-center '>
+        <div className='d-flex justify-content-center mediohero col-5 '>
+                <p>
+                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
+                </p>
+
+        </div>
+        </div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             
@@ -364,7 +593,7 @@ const Body = ({children}) => {
 
 
 
-            {children}
+         
         </main>
     );
 }

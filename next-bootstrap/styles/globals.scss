@@ -31,9 +31,7 @@ body, html {
 }
 
 .mediohero{
-  
   text-align: center;
-  
   align-items: center;
 }
 .mediohero-info{
@@ -57,6 +55,14 @@ body, html {
   justify-content: end;
 
 }
+.div-float2{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+
+}
 .Cat-imagen{
   display: flex;
   width: auto;
@@ -66,6 +72,16 @@ body, html {
   margin-bottom: 56px;
   
 }
+.vendido-imagen{
+  display: flex;
+  width: auto;
+  height: 500px;
+	background:  url(../public/assets/img-recien-vendido.png) center center / cover no-repeat;
+  align-items: center;
+  margin-bottom: 56px;
+  
+}
+
 
 .quienes-somos{
   font-family: Montserrat;
@@ -91,6 +107,10 @@ h1 {
   text-align: center;
 
   
+}
+.espacio-8{
+  margin-left: 9px;
+  margin-right: 9px;
 }
 .imagen-de-video{
   height: 580px;
@@ -205,6 +225,7 @@ line-height: 34px;
 letter-spacing: 0em;
 color: black;
 
+
 }
 .div-lado-derecho{
   width: 40%;
@@ -218,17 +239,58 @@ color: black;
 }
 .espacio-arriba-muchomas{
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.y-mucho-mas{
+  margin-bottom: 56px;
+}
+
+.color-h3{
+  color: black;
 }
 
 
 
 
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
-
-
-
+.andrea{
+  font-weight: 500;
+  margin-bottom: 17px;
+}
 
 
 
