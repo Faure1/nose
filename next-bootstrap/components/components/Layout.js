@@ -31,6 +31,15 @@ const Layout = ({children}) => {
 
   {children}
 
+
+
+
+  <div className='footer  ' >
+    <div >
+      <p >Big Dick Industries / From NFS</p>
+    </div>
+  </div>
+
   </main>
   );
 }

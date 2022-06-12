@@ -12,6 +12,9 @@ const Body = ({children}) => {
     
     return (  
         <main>
+            
+            {/* PRIMER HERO*/}
+
              <div className="hero col-12 " >
                  <Container >
                      <Row className='d-flex justify-content-center mediohero '>
@@ -33,6 +36,11 @@ const Body = ({children}) => {
 
 
 
+
+
+
+            {/* QUIENES SOMOS*/}
+
             <div >
                 <h1 className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
             </div>
@@ -42,6 +50,11 @@ const Body = ({children}) => {
 
 
 
+
+
+
+
+            {/* QUIENES SOMOS CONTENEDOR*/}
 
             <Container className="quienes-somos-container">
                 <Row>
@@ -65,7 +78,11 @@ const Body = ({children}) => {
 
 
 
-  
+
+
+
+
+            {/* SEGUNDO HERO*/}
 
             <div className="hero2 col-12 " >
                  <Container >
@@ -104,6 +121,8 @@ const Body = ({children}) => {
 
 
 
+            {/* MAQUINARIA EN VENTA*/}
+
             <div >
                 <h1 className="text-dark d-flex justify-content-center quienes-somos">Maquinaria en venta</h1>
             </div>
@@ -114,6 +133,10 @@ const Body = ({children}) => {
 
 
 
+
+
+
+            {/* VIDEO PRIMER MAQUINA EN VENTA*/}
 
             <Container>
             <div className='col-12 imagen-de-video'>
@@ -126,6 +149,9 @@ const Body = ({children}) => {
 
 
 
+
+
+            {/* PRIMER MAQUINA VENTA*/}
 
             <Container className="margin-bottom-56px">
                 <Row className=''>
@@ -149,7 +175,7 @@ const Body = ({children}) => {
                                    <p className='lado-izquierdo'>Precio:</p>
                                 </div>
                             </div>
-                                <div className='order-1 w-25'>
+                                <div className='order-1 div-lado-derecho'>
                                     <div className='div-info-lado-derecho'>
                                     <p className='lado-derecho'>  2013</p>
                                     </div>
