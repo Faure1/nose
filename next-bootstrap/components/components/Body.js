@@ -7,12 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 
+
 const Body = ({children}) => {
 
     
     return (  
         <main>
-            
+
             {/* PRIMER HERO*/}
 
              <div className="hero col-12 " >
@@ -135,6 +136,12 @@ const Body = ({children}) => {
 
 
 
+        
+
+
+
+
+
 
             {/* VIDEO PRIMER MAQUINA EN VENTA*/}
 
@@ -206,6 +213,138 @@ const Body = ({children}) => {
                     </div>
                 </Row>
             </Container>
+
+
+
+
+
+
+
+
+
+
+            
+            {/* Nosotros te lo conseguimos*/}
+
+            <div >
+                <h1 className="text-dark d-flex justify-content-center quienes-somos">Nosotros te lo conseguimos</h1>
+            </div>
+            <div className='d-flex justify-content-center'>
+                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+            </div>
+            <div className='quienes-somos-container-2'>
+                <p className=' d-flex justify-content-center '>¿Tienes un proyecto y necesitas maquinaria pesada de segunda mano?  </p>
+                <p className='text-dark d-flex justify-content-center'>¡Cuenta con nosotros! Te traemos la maquinaria deseada por flotas o individual desde Estados unidos o Europa. </p>
+            </div>
+            <div className='medio-altura'>
+             <Button className=' justify-content-center ' variant="dark">contactanos</Button>
+            </div>
+
+
+
+
+            {/* Nosotros te lo conseguimos - imagenes*/}
+
+            
+            <Container>
+                <Row>
+                    <div className='col-lg-6 col-12'>
+                     <Image src='/assets/1-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h2 className='d-flex justify-content-center'>Retroescabadoras </h2>
+                    </div>
+                    <div className='col-lg-6 col-12'>
+                    <Image src='/assets/2-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h2 className='d-flex justify-content-center'>Excavadoras </h2> 
+                    </div>
+                </Row>
+                <Row >
+                    <div className='col-lg-6 col-12 conseguimos-imagenes'>
+                    <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h2 className='d-flex justify-content-center'>Tractor oruga </h2> 
+                    </div>
+                    <div className='col-lg-6 col-12 conseguimos-imagenes'>
+                    <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
+                        <h2 className='d-flex justify-content-center'>Mini cargador </h2> 
+                    </div>
+                </Row>
+            </Container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Container className='espacio-arriba-muchomas'>
+                <Row>
+                    <div >
+                        <h2 className="text-dark d-flex justify-content-center ">y mucho más</h2>
+                    </div>
+                </Row>
+            </Container>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* Marcas comerciales*/}
+
+            <div >
+                <h1 className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
+            </div>
+            <div className='d-flex justify-content-center'>
+                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+            </div>
+
+
+
+
+            {/* Marcas comerciales*/}
+
+
+            
+
 
 
 
