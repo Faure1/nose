@@ -128,26 +128,40 @@ const Body = ({children}) => {
 
 
             <Container className="margin-bottom-56px">
-                <Row>
-                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 medio-altura2 mediohero">
-                        <div className='col-12'>
+                <Row className=''>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 mediohero-info">
+                        <div className='col-12 '>
                             <div>
                             <h1 className='titulos-venta'>Excavadora CAT 336 ELH</h1>
-
                             </div>
-                            <div className='d-flex'>
-                            <div className=' order-0 w-50'>
-                                    <p className='lado-izquierdo' >Año:</p>
-                                    <p className='lado-izquierdo'>Odómetro:</p>
-                                    <p className='lado-izquierdo'>Condición:</p>
-                                    
-                                    <p className='lado-izquierdo'>Precio:</p>
+                            <div className='d-flex texto-de-info-medio'>
+                            <div className=' order-0 w-20'>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo' >Año:</p>
                                 </div>
-                                <div className='order-1 w-50 '>
-                                    <p className='lado-derecho'>2013</p>
-                                    <p>-</p>
-                                    <p className='lado-derecho'>usada,Perfecto estado.</p>
-                                    <p className='lado-derecho'>$145,000 USD</p>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Odómetro:</p>   
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Condición:</p>
+                                </div>    
+                                <div className='div-info-ado-izquierdo'>
+                                   <p className='lado-izquierdo'>Precio:</p>
+                                </div>
+                            </div>
+                                <div className='order-1 w-25'>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>  2013</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>  -</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                        <p className='lado-derecho'>  usada,Perfecto estado.</p>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                    <p className='lado-derecho'>  $145,000 USD</p>
+                                    </div>
                                 </div>
                             </div>
                             <div>

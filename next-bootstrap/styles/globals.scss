@@ -29,13 +29,18 @@ body, html {
   margin-bottom: 12px;
 
 }
+
 .mediohero{
   
   text-align: center;
   
   align-items: center;
 }
+.mediohero-info{
+  text-align: center;
+  align-items: center;
 
+}
 .padding{
   margin-bottom: 40px;
 }
@@ -162,22 +167,33 @@ letter-spacing: 0em;
   text-align: center;
 }
 .lado-izquierdo{
+  display: inline;
   font-family: Inter;
-font-size: 18px;
-font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.01em;
 color: rgba(67, 78, 86, 1);
 
 }
-
+.div-info-ado-izquierdo  {
+  text-align: start;
+}
+.div-info-lado-derecho{
+  text-align: start;
+}
 .lado-derecho{
+  display: inline;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: black;
+
+}
+.texto-de-info-medio{
+  justify-content: center;
 
 }
 .titulos-venta{
