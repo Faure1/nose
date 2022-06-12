@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 
+
 const Body = () => {
 
     return (  
@@ -314,7 +315,32 @@ const Body = () => {
         <div className='d-flex justify-content-center padding'>
             <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
         </div>
+
+
+
+
+
+        {/*       
+         breakpoints={{
+              320: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1440: {
+                slidesPerView: 7,
+                spaceBetween: 50,
+              }
+         }} 
+         */}
             
+
+
+
+
 
 
 
@@ -323,7 +349,6 @@ const Body = () => {
          loop={true}
          spaceBetween={30}
          centeredSlides={true}
-         
         autoplay={{
           delay: 1500,
           disableOnInteraction: false
