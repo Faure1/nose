@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image'
 import {Button, Container, Row} from 'react-bootstrap'
-import { Controller } from 'swiper';
+import { Controller, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -132,6 +132,98 @@ const Body = () => {
 
 
 
+            <Container className="margin-bottom-56px">
+                <Row className=''>
+                    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 mediohero-info">
+                        <div className='col-12 '>
+                            <div>
+                            <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
+                            </div>
+                            <div className='d-flex texto-de-info-medio'>
+                            <div className=' order-0 w-20'>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo' >Año:</p>
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Odometro:</p>   
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Condicion:</p>   
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                    <Button variant="dark">contactanos</Button>
+                                </div>
+
+                            </div>
+                                <div className='order-1 div-lado-derecho'>
+                                    <div className='div-info-lado-derecho'>
+                                    <h2 className='lado-derecho'>  2014 </h2>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                    <h2 className='lado-derecho'>  11.037 </h2>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                        <h2 className='lado-derecho'>  USADA, Perfecto estado.</h2>
+                                    </div>
+                                    <div className='div-info-ado-izquierdo'>
+                                    <Button variant="light">Ficha tecnica</Button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="col-12 order-0 order-lg-0 col-lg-6 ">
+                    <Swiper
+        pagination={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <a  href='https://www.facebook.com/watch/?v=521585079352621'>
+          <SwiperSlide >
+            <div className="Cat-imagen2" >
+                    <div className='div-float'>
+                     <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+             </div>
+         </SwiperSlide>
+        </a>
+
+
+        <SwiperSlide>
+        <div className="Cat-imagen3" >
+                    <div className='div-float'>
+                     <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+             </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="Cat-imagen4" >
+                    <div className='div-float'>
+                     <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+             </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="Cat-imagen5" >
+                    <div className='div-float'>
+                     <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+             </div>
+        </SwiperSlide>
+      </Swiper>
+                    </div>
+                </Row>
+            </Container>
+
+
+
+
+
+
+
+
 
 
 
@@ -214,6 +306,93 @@ const Body = () => {
             </Container>
 
 
+            <Container className="margin-bottom-56px">
+                <Row className=''>
+                    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 mediohero-info">
+                        <div className='col-12 '>
+                            <div>
+                            <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
+                            </div>
+                            <div className='d-flex texto-de-info-medio'>
+                            <div className=' order-0 w-20'>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo' >Capacidad:</p>
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                <p className='lado-izquierdo'>Condición:</p>   
+                                </div>
+                                <div className='div-info-ado-izquierdo'>
+                                    <Button variant="dark">contactanos</Button>
+                      
+                                </div>
+                            </div>
+                                <div className='order-1 div-lado-derecho'>
+                                    <div className='div-info-lado-derecho'>
+                                    <h2 className='lado-derecho'>  Desde 20 a 80 toneladas. </h2>
+                                    </div>
+                                    <div className='div-info-lado-derecho'>
+                                        <h2 className='lado-derecho'>  USADA, Perfecto estado.</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="col-12 order-0 order-lg-0 col-lg-6 ">
+                    <Swiper
+        pagination={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+        >
+          <SwiperSlide >
+            <div className="swiper2-1" >
+                    <div className='div-float'>
+                     <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+             </div>
+         </SwiperSlide>
+          <SwiperSlide >
+            <div className="swiper2-2" >
+
+             </div>
+         </SwiperSlide>
+          <SwiperSlide >
+            <div className="swiper2-3" >
+
+             </div>
+         </SwiperSlide>
+          <SwiperSlide >
+            <div className="swiper2-4" >
+
+             </div>
+         </SwiperSlide>      
+          <SwiperSlide >
+            <div className="swiper2-5" >
+
+             </div>
+         </SwiperSlide>
+        <SwiperSlide>
+        <div className="swiper2-6" >
+
+             </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="swiper2-7" >
+
+             </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="swiper2-8" >
+
+             </div>
+        </SwiperSlide>
+      </Swiper>
+                    </div>
+                </Row>
+            </Container>
+
+
 
 
 
@@ -270,37 +449,64 @@ const Body = () => {
 
 
 
+
+
+
+
+
             <Container className='espacio-arriba-muchomas mediohero '>
                     <div >
                         <h2 className="text-dark d-flex justify-content-center y-mucho-mas">Y mucho más</h2>
                     </div>
-                <Row>
-                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Rodillo compactador</p> 
-                    </div>
-                    <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Dumper</p> 
-                </div>
-                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Hormigonera todo terreno</p> 
-                </div>
-                    <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Camion bomba de hormigon </p> 
-                </div>
-                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Camiones volquetes articulados </p> 
-                </div>
-                <div className='col-lg-2 col-12 conseguimos-imagenes mediohero '>
-                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
-                </div>
-                </Row>
             </Container>
+            <Swiper
+         slidesPerView={6}
+         spaceBetween={30}
+         centeredSlides={false}
+        modules={[ ]}
+        className="mySwiper"
+      >
+
+<SwiperSlide>
+            <div>
+                <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Rodillo compactador</p> 
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Dumper</p>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Hormigonera todo terreno</p>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Camion bomba de hormigon </p>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Camiones volquetes articulados </p>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div>
+                <Image src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
+                <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
+            </div>
+        </SwiperSlide>
+
+
+
+        </Swiper>
 
 
 
@@ -335,10 +541,17 @@ const Body = () => {
                 spaceBetween: 50,
               }
          }} 
+            
+         para poner en 2 rows
+         grid={{
+            rows: 2,
+          }}
+
+          poner esto en el scss  en swiper-slide
+            height: calc((100% - 30px) / 2) !important;
+
          */}
             
-
-
 
 
 
@@ -349,6 +562,8 @@ const Body = () => {
          loop={true}
          spaceBetween={30}
          centeredSlides={true}
+
+
         autoplay={{
           delay: 1500,
           disableOnInteraction: false
