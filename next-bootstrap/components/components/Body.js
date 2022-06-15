@@ -483,8 +483,8 @@ const Body = () => {
         className="mySwiper">
 
 <SwiperSlide>
-            <div>
-                <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic'></Image>
+            <div >
+                <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
                 <p className='d-flex justify-content-center'>Rodillo compactador</p> 
             </div>
         </SwiperSlide>
@@ -807,8 +807,8 @@ const Body = () => {
                                 </Row>
                                 <Row>
                                     <div className=' d-flex justify-content-center'>
-                                        <div  >
-                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        <div   >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic' ></Image>
                                         </div>
                                         <div className='espacio-8' >
                                             <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
