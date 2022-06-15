@@ -4,11 +4,16 @@ import Image from 'next/image'
 import {Button, Container, Row} from 'react-bootstrap'
 import { Controller, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination,Navigation  } from "swiper";
+import {Nosotros} from '../../profile'
+
+
+
 
 
 
 const Body = () => {
+
 
     return (  
         <main>
@@ -42,7 +47,7 @@ const Body = () => {
             {/* QUIENES SOMOS*/}
 
             <div >
-                <h1 className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
+                <h1 id='Quienessomos' className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
             </div>
             <div className='d-flex justify-content-center'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
@@ -124,7 +129,7 @@ const Body = () => {
             {/* MAQUINARIA EN VENTA*/}
 
             <div >
-                <h1 className="text-dark d-flex justify-content-center quienes-somos">Maquinaria en venta</h1>
+                <h1 id='maquinarias' className="text-dark d-flex justify-content-center quienes-somos">Maquinaria en venta</h1>
             </div>
             <div className='d-flex justify-content-center margin-abajo'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
@@ -176,8 +181,8 @@ const Body = () => {
                     <div className="col-12 order-0 order-lg-0 col-lg-6 ">
                     <Swiper
         pagination={true}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        navigation= {true}
+        modules={[Pagination, Navigation ]}
         className="mySwiper"
       >
         <a  href='https://www.facebook.com/watch/?v=521585079352621'>
@@ -189,8 +194,6 @@ const Body = () => {
              </div>
          </SwiperSlide>
         </a>
-
-
         <SwiperSlide>
         <div className="Cat-imagen3" >
                     <div className='div-float'>
@@ -198,6 +201,7 @@ const Body = () => {
                     </div>
              </div>
         </SwiperSlide>
+
         <SwiperSlide>
         <div className="Cat-imagen4" >
                     <div className='div-float'>
@@ -216,6 +220,12 @@ const Body = () => {
                     </div>
                 </Row>
             </Container>
+
+
+
+
+
+
 
 
 
@@ -306,6 +316,9 @@ const Body = () => {
             </Container>
 
 
+
+
+
             <Container className="margin-bottom-56px">
                 <Row className=''>
                     <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 mediohero-info">
@@ -342,6 +355,9 @@ const Body = () => {
                     <Swiper
         pagination={true}
         navigation={true}
+        slidesPerView={1}
+         spaceBetween={20}
+         centeredSlides={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
         >
@@ -415,7 +431,7 @@ const Body = () => {
                 <p className='text-dark d-flex justify-content-center align-item-center'>¡Cuenta con nosotros! Te traemos la maquinaria deseada por flotas o individual desde Estados unidos o Europa. </p>
             </div>
             <div className='medio-altura'>
-             <Button className=' justify-content-center ' variant="dark">contactanos</Button>
+             <Button className=' justify-content-center' variant="dark">contactanos</Button>
             </div>
 
 
@@ -423,49 +439,48 @@ const Body = () => {
 
             {/* Nosotros te lo conseguimos - imagenes*/}
 
-            
-            <Container>
+
+
+            <Container  > 
                 <Row>
-                    <div className='col-lg-6 col-12'>
-                        <Image src='/assets/1-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h3 className='d-flex justify-content-center color-h3'>Retroescabadoras </h3>
-                    </div>
-                    <div className='col-lg-6 col-12'>
-                        <Image src='/assets/2-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h3 className='d-flex justify-content-center color-h3'>Excavadoras </h3> 
-                    </div>
-                </Row>
-                <Row >
-                    <div className='col-lg-6 col-12 conseguimos-imagenes'>
-                        <Image src='/assets/3-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h3 className='d-flex justify-content-center color-h3'>Tractor oruga </h3> 
-                    </div>
-                    <div className='col-lg-6 col-12 conseguimos-imagenes'>
-                        <Image src='/assets/4-conseguimos.png'  width={600} height={326} layout='intrinsic'></Image>
-                        <h3 className='color-h3 d-flex justify-content-center '>Mini cargador </h3> 
-                    </div>
-                </Row>
+                {
+                    Nosotros.map(({img, text}, i) =>(
+                        <div className='col-6'>
+                            <div className='d-flex justify-content-center mt-4  '>
+                            <Image src={img} width={600} height={326} layout='intrinsic' ></Image>
+                        </div>
+                            <h3 className='color-h3 py-2'>{text}</h3>
+                        </div>                           
+                    ))
+                }
+                    </Row>
             </Container>
 
 
 
+            
+                        
 
+      
 
-
-
-
+            
+            
+        
             <Container className='espacio-arriba-muchomas mediohero '>
                     <div >
-                        <h2 className="text-dark d-flex justify-content-center y-mucho-mas">Y mucho más</h2>
+                        <h2 className=" d-flex justify-content-center y-mucho-mas">Y MUCHO MAS</h2>
                     </div>
             </Container>
+
+
+
+            
             <Swiper
          slidesPerView={6}
          spaceBetween={30}
          centeredSlides={false}
         modules={[ ]}
-        className="mySwiper"
-      >
+        className="mySwiper">
 
 <SwiperSlide>
             <div>
@@ -550,6 +565,18 @@ const Body = () => {
           poner esto en el scss  en swiper-slide
             height: calc((100% - 30px) / 2) !important;
 
+
+            
+                     slidesPerView={10}
+         loop={true}
+         spaceBetween={30}
+         centeredSlides={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false
+        }}
+        modules={[Autoplay ]}
+        className="mySwiper3"
          */}
             
 
@@ -562,83 +589,68 @@ const Body = () => {
          loop={true}
          spaceBetween={30}
          centeredSlides={true}
-
-
         autoplay={{
           delay: 1500,
           disableOnInteraction: false
         }}
         modules={[Autoplay ]}
-        className="mySwiper"
+        className="mySwiper3"
       >
         <SwiperSlide>
-            <div>
-                <Image src='/assets/log-holland.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='new'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-bobcat.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='bobcat'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-case.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='case'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-cat.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='cat'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-caterpillar.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='cater'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-doosan.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='doosan'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-hitachi.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='hitachi'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-hyundai.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='hyundai'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-jcb.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='jcb'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-joh-deere.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='john'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-jomatsu.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='komatsu'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-kubota.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='kubata'>
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-liebherr.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='liebherr'>
+
             </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div>
-                <Image src='/assets/logo-volvo.png'  width={186} height={116} layout='intrinsic'></Image>
+            <div className='volvo'>
             </div>
         </SwiperSlide>
       </Swiper>
@@ -650,7 +662,7 @@ const Body = () => {
       
         {/* Recien vendida*/}
         <div >
-            <h1 className="text-dark d-flex justify-content-center quienes-somos">Recien vendida</h1>
+            <h1 className="text-dark d-flex justify-content-center quienes-somoss">Recien vendida</h1>
         </div>
         <div className='d-flex justify-content-center padding'>
             <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
@@ -725,7 +737,7 @@ const Body = () => {
         {/* testimonios*/}
       
         <div >
-            <h1 className="text-dark d-flex justify-content-center quienes-somos">Testimonios</h1>
+            <h1 id='testimonios' className="text-dark d-flex justify-content-center quienes-somos">Testimonios</h1>
         </div>
         <div className='d-flex justify-content-center padding '>
             <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
@@ -735,167 +747,169 @@ const Body = () => {
 
 
 
-        <Container className='margin-abajo'>
-            <Row className='d-flex justify-content-center '>
-                <div className='col-12 '>      
-        <Swiper
+
+
+
+
+
+        <Container className="margin-bottom-56px">
+                <Row className='d-flex justify-content-center'>
+                    <div className="col-12 ">
+                    <Swiper
+                    slidesPerView={1}
         pagination={true}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
+        className="mySwiper2"
+        >
           <SwiperSlide >
           <Container>
-            <Row>
-            <div className='d-flex justify-content-center'>
-            <h2 className='andrea'>Andrea</h2>
-           </div>
-            </Row>
-            <Row>
-                <div className=' d-flex justify-content-center'>
-                    <div  >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                </div>
-            </Row>  
-        <div className=' d-flex justify-content-center mediohero align-item-center '>
-        <div className='d-flex justify-content-center mediohero col-5 '>
-                <p>
-                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
-                </p>
-
-        </div>
-        </div>
-        </Container>  
+                                <Row>
+                                    <div className='d-flex justify-content-center'>
+                                        <h2 className='andrea'>Andrea</h2>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div className=' d-flex justify-content-center'>
+                                        <div  >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                         <div >
+                                            <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                         </div>
+                                        </div>
+                                </Row>  
+                                    <div className=' d-flex justify-content-center mediohero align-item-center '>
+                                        
+                                        <div className='d-flex justify-content-center mediohero col-12 col-lg-5 '>
+                                            <p>
+                                                Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
+                                            </p>
+                                         </div>
+                                    </div>
+                            </Container>
          </SwiperSlide>
-
-
-
-        <SwiperSlide>
-        <Container>
-            <Row>
-            <div className='d-flex justify-content-center'>
-            <h2 className='andrea'>Andrea</h2>
-           </div>
-            </Row>
-            <Row>
-                <div className=' d-flex justify-content-center'>
-                    <div  >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                </div>
-            </Row>  
-        <div className=' d-flex justify-content-center mediohero align-item-center '>
-        <div className='d-flex justify-content-center mediohero col-5 '>
-                <p>
-                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
-                </p>
-
-        </div>
-        </div>
-        </Container> 
-        </SwiperSlide>
-        <SwiperSlide>
-        <Container>
-            <Row>
-            <div className='d-flex justify-content-center'>
-            <h2 className='andrea'>Andrea</h2>
-           </div>
-            </Row>
-            <Row>
-                <div className=' d-flex justify-content-center'>
-                    <div  >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                </div>
-            </Row>  
-        <div className=' d-flex justify-content-center mediohero align-item-center '>
-        <div className='d-flex justify-content-center mediohero col-5 '>
-                <p>
-                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
-                </p>
-
-        </div>
-        </div>
-        </Container> 
-        </SwiperSlide>
-        <SwiperSlide>
-        <Container>
-            <Row>
-            <div className='d-flex justify-content-center'>
-            <h2 className='andrea'>Andrea</h2>
-           </div>
-            </Row>
-            <Row>
-                <div className=' d-flex justify-content-center'>
-                    <div  >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div className='espacio-8' >
-                        <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                    <div >
-                        <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
-                    </div>
-                </div>
-            </Row>  
-        <div className=' d-flex justify-content-center mediohero align-item-center '>
-        <div className='d-flex justify-content-center mediohero col-5 '>
-                <p>
-                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
-                </p>
-
-        </div>
-        </div>
-        </Container> 
-        </SwiperSlide>
+          <SwiperSlide >
+          <Container>
+                                <Row>
+                                    <div className='d-flex justify-content-center'>
+                                        <h2 className='andrea'>Lautaro</h2>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div className=' d-flex justify-content-center'>
+                                        <div  >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                         <div >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                         </div>
+                                        </div>
+                                </Row>  
+                                    <div className=' d-flex justify-content-center mediohero align-item-center '>
+                                        <div className='d-flex justify-content-center mediohero col-12 col-lg-5 '>
+                                            <p>
+                                                Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
+                                            </p>
+                                         </div>
+                                    </div>
+                            </Container>
+         </SwiperSlide>
+          <SwiperSlide >
+          <Container>
+                                <Row>
+                                    <div className='d-flex justify-content-center'>
+                                        <h2 className='andrea'>Santiago</h2>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div className=' d-flex justify-content-center'>
+                                        <div  >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                         <div >
+                                            <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                         </div>
+                                        </div>
+                                </Row>  
+                                    <div className=' d-flex justify-content-center mediohero align-item-center '>
+                                        <div className='d-flex justify-content-center mediohero col-12 col-lg-5 '>
+                                            <p>
+                                                Realmente no estoy del todo comodo todavia, pero debo admitir que a un nivel objetivo alcanza las espectativas, y de hecho en un futuro espero poder realizar mas negocos. 
+                                            </p>
+                                         </div>
+                                    </div>
+                            </Container>
+         </SwiperSlide>
+          <SwiperSlide >
+          <Container className='prueba'>
+                                <Row>
+                                    <div className='d-flex justify-content-center'>
+                                        <h2 className='andrea'>Andrea</h2>
+                                    </div>
+                                </Row>
+                                <Row>
+                                    <div className=' d-flex justify-content-center'>
+                                        <div  >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                        <div className='espacio-8' >
+                                            <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                        </div>
+                                         <div >
+                                            <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                         </div>
+                                        </div>
+                                </Row>  
+                                    <div className=' d-flex justify-content-center mediohero align-item-center '>
+                                        <div className='d-flex justify-content-center mediohero col-12 col-lg-5 '>
+                                            <p>
+                                                Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
+                                            </p>
+                                         </div>
+                                    </div>
+                            </Container>
+         </SwiperSlide>      
       </Swiper>
-                </div>
-            </Row>
-        </Container>
-        
+                    </div>
+                </Row>
+            </Container>
+                
+
+
 
 
 

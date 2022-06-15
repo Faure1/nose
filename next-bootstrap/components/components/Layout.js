@@ -17,7 +17,7 @@ const Layout = ({children}) => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
             <Nav className="me-auto d-flex ">
-              <Nav.Link  href="#quienes-somos">quienes somos</Nav.Link>
+              <Nav.Link  href="#Quienessomos">quienes somos</Nav.Link>
               <Nav.Link  href="#maquinarias">maquinarias</Nav.Link>
               <Nav.Link  href="#testimonios">testimonios</Nav.Link>
             </Nav>

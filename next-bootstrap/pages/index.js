@@ -13,6 +13,8 @@ import "swiper/css/bundle";
 
 
 
+
+
 export default function Home() {
   return (
     <div>
@@ -20,8 +22,6 @@ export default function Home() {
     <Body/>
   
     </Layout>
-
-
    
 
     </div>

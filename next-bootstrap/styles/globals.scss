@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+
+
+
 .navMedio{
   justify-content: space-between;
   align-items: center;
@@ -91,7 +95,11 @@ line-height: 46px;
 letter-spacing: 0em;
 text-align: center;
 color: #fff;
-  margin-top:90px;
+margin-top:90px;
+}
+
+.quienes-somoss{
+  margin-top:10px;
 }
 
 .quienes-somos-2{
@@ -164,6 +172,7 @@ color: #fff;
 .medio-altura{
   text-align: center;
 }
+
 h2{
 
 font-family: Montserrat;
@@ -248,6 +257,7 @@ color: black;
 
 .color-h3{
   color: black;
+
 }
 
 
@@ -374,7 +384,7 @@ color: black;
   display: flex;
   height: 500px;
   width: 100%;
-	background:  url(../public/assets/2-swiper-6.png) center center / cover no-repeat;
+	background:  url(../public/assets/2-swiper-6.png) center center / cover  no-repeat;
   align-items: center;
   margin-bottom: 56px;
 }
@@ -390,11 +400,10 @@ color: black;
   display: flex;
   height: 500px;
   width: 100%;
-	background:  url(../public/assets/2-swiper-8.png) center center / cover no-repeat;
+	background:  url(../public/assets/2-swiper-8.png) center center / cover  no-repeat;
   align-items: center;
   margin-bottom: 56px;
 }
-
 .margin-abajo{
   margin-bottom: 40px;
 }
@@ -403,33 +412,273 @@ color: black;
   height: 48px !important;
   background: rgba(4, 4, 4, 0.7) !important;
   background-size: 30% !important;
-  padding: 5px;
+  padding: 5px !important;
   color: #fff !important;
   top: 95% !important;
-
-
  }
 .swiper-button-prev{ 
   width: 48px !important;
   height: 48px !important;
-  background: rgba(4, 4, 4, 0.7);
-  padding: 5px;
+  background: rgba(4, 4, 4, 0.7) !important;
+  padding: 5px !important;
   color: #fff !important;
   top: 95% !important;
+  
  }
 .swiper-pagination-bullet{
   background: grey !important;
+  width: 10px !important;
+  height: 10px !important;
+
 }
 .swiper-pagination-bullet-active {
-
   width: 32px !important;
   height: 10px !important;
   background: rgba(255, 186, 66, 1) !important;
   border-radius: 30% !important;
+}
+.tamaño-swiper-testimonio{
+  height: 100%;
+  margin-bottom: 90px;
+}
+.prueba{
+  margin-bottom: 56px;
+}
+.mySwiper2{
+  .swiper-button-next{ 
+    width: 48px !important;
+    height: 48px !important;
+    background: rgba(4, 4, 4, 0.7) !important;
+    background-size: 30% !important;
+    padding: 5px !important;
+    color: #fff !important;
+    top: 88% !important;
+    right: 20% !important;
+   }
+  .swiper-button-prev{ 
+    width: 48px !important;
+    height: 48px !important;
+    background: rgba(4, 4, 4, 0.7) !important;
+    padding: 5px !important;
+    color: #fff !important;
+    top: 88% !important;
+    left: 20% !important;
 
+   }
+   .swiper {
+    height: 500px;
+    width: 100%;
+  }
+  .swiper-slide {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet{
+    background: grey !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 32px !important;
+    height: 10px !important;
+    background: rgba(255, 186, 66, 1) !important;
+    border-radius: 30% !important;
+  }
 }
 
-
+.new{
+  display: flex;
+  height: 116px;
+  width: 196px;
+	background:  url(../public/assets/new-sin.png) center center / contain  no-repeat;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.new:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/log-holland.png) center center / contain  no-repeat;
+}
+.bobcat{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/bocat-sin.png) center center / contain   no-repeat;
+}
+.bobcat:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-bobcat.png) center center / contain  no-repeat;
+}
+.case{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/case-sin.png) center center / contain  no-repeat;
+}
+.case:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-case.png) center center / contain  no-repeat;
+}
+.cat{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/cat-sin.png) center center / contain  no-repeat;
+}
+.cat:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-cat.png) center center / contain  no-repeat;
+}
+.cater{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/cater-sin.png) center center / contain  no-repeat;
+}
+.cater:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-caterpillar.png) center center / contain  no-repeat;
+}
+.doosan{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/doosan-sin.png) center center / contain  no-repeat;
+}
+.doosan:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-doosan.png) center center / contain  no-repeat;
+}
+.hitachi{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/hitachi-sin.png) center center / contain  no-repeat;
+}
+.hitachi:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-hitachi.png) center center / contain  no-repeat;
+}
+.hyundai{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/hyundai-sin.png) center center / contain  no-repeat;
+}
+.hyundai:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-hyundai.png) center center / contain  no-repeat;
+}
+.jcb{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/jcb-sin.png) center center / contain  no-repeat;
+}
+.jcb:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-jcb.png) center center / contain  no-repeat;
+}
+.john{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/john-sin.png) center center / contain  no-repeat;
+}
+.john:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-joh-Deere.png) center center / contain  no-repeat;
+}
+.komatsu{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/komatsu-sin.png) center center / contain  no-repeat;
+}
+.komatsu:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-jomatsu.png) center center / contain  no-repeat;
+}
+.kubata{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/kubata-sin.png) center center / contain  no-repeat;
+}
+.kubata:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-kubota.png) center center / contain  no-repeat;
+}
+.liebherr{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/liebherr-sin.png) center center / contain  no-repeat;
+}
+.liebherr:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-liebherr.png) center center / contain  no-repeat;
+}
+.volvo{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/volvo-sin.png) center center / contain  no-repeat;
+}
+.volvo:hover{
+  display: flex;
+  height: 116px;
+  width: 196px;
+  background:  url(../public/assets/logo-volvo.png) center center / contain  no-repeat;
+}
 @media (max-width: 768px){
   .imagen-de-video{
     height: 394px;
@@ -442,6 +691,7 @@ color: black;
   }
 
 }
+
 @media (max-width: 320px){
   .imagen-de-video{
     height: 222px;

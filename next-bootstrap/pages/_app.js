@@ -5,6 +5,9 @@ import 'swiper/scss/pagination';
 import 'swiper/scss/scrollbar';
 
 
+
+
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
   
