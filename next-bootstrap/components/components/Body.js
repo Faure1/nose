@@ -249,7 +249,7 @@ const Body = () => {
             <Container>
             <div className='col-12 imagen-de-video'>
                <Container className=' d-flex justify-content-center mediohero'>
-                <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' className='boton-video'> <Button   variant="light"> <Image src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
+                <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' rel="noopener noreferrer" className='boton-video'> <Button   variant="light"> <Image src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
                 </Container>
             </div>
             </Container>
