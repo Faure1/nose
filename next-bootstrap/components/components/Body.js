@@ -5,9 +5,9 @@ import {Button, Container, Row} from 'react-bootstrap'
 import { Controller, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination,Navigation  } from "swiper";
-import {Nosotros} from '../../profile'
-import {Brands} from '../../profile'
-import {Brands2} from '../../profile'
+
+import {Brands, Gruas1, Brands2, Nosotros} from '../../profile'
+
 
 
 const Body = () => {
@@ -97,80 +97,91 @@ const Body = () => {
             </div>
             {/* Primer MAQUINARIA EN VENTA*/}
             <Container>
-                <Row>
-                    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 text-center align-items-center">
-                        <div className='col-12 '>
-                            <div>
-                                <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
-                            </div>
+                <Row >
+                    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6  align-items-center">
+                        <div className='col-12'>
+                            <Row >
+                                <div className='d-flex justify-content-center'>
+                                    <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
+                                </div>
+                
+                            </Row>
+                            {
+                            Gruas1.map(({variable, content}, i) =>(
+                                <Row>
+                                    <div className='d-flex justify-content-center'>
+                                        <div className='d-flex '>
+                                            <div className=' order-0 w-20 '>
+                                                <div className='div-info-lado '>
+                                                    <p className='lado-izquierdo d-inline text-secondary'>{variable}</p>
+                                                </div>
+                                            </div>
+                                                <div className='order-1 div-info-lado '>
+                                                    <div className='div-info-lado '>
+                                                        <p className='lado-izquierdo d-inline ' >{content}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Row>
+                                ))       
+                            }
                             <div className='d-flex justify-content-center'>
-                                <div className=' order-0 w-20'>
-                                    <div className='div-info-lado '>
-                                        <p className='lado-izquierdo d-inline text-secondary' >Año:</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline text-secondary'>Odometro:</p>   
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo  d-inline text-secondary'>Condicion:</p>   
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <Button variant="dark">contactanos</Button>
-                                    </div>
+                                <div className='div-info-lado'>
+                                    <Button variant="dark">contactanos</Button>
                                 </div>
-                                <div className='order-1 div-info-lado'>
-                                    <div className='div-info-lado'>
-                                        <h2 className='lado-izquierdo d-inline'>  2014 </h2>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <h2 className='lado-izquierdo d-inline'>  11.037 </h2>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <h2 className='lado-izquierdo d-inline'>  USADA, Perfecto estado.</h2>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <Button variant="light">Ficha tecnica</Button>
-                                    </div>
-                                </div>
+                                <div className='div-info-lado'>
+                                    <Button variant="light">Ficha tecnica</Button>
+                                </div>                        
                             </div>
+
+
+
+
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-0 col-lg-6  mb-5 ">
-                        <Swiper pagination={true} navigation= {true} modules={[Pagination, Navigation ]} className="mySwiper">
-                            <a  href='https://www.facebook.com/watch/?v=521585079352621'>
-                                <SwiperSlide >
-                                    <div className="Cat-imagen2 w-100 mb-5" >
-                                        <div className='w-100 h-100 d-flex align-items-end justify-content-end  '>
-                                            <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </a>
-                            <SwiperSlide>
-                                <div className="Cat-imagen3 w-100 mb-5" >
-                                    <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
-                                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="Cat-imagen4 w-100 mb-5" >
-                                    <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
-                                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="Cat-imagen5 w-100 mb-5" >
-                                    <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
-                                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
-                                    </div>
-                                 </div>
-                            </SwiperSlide>
-                        </Swiper>
+
+
+
+
+
+
+    <div className="col-12 order-0 order-lg-0 col-lg-6  espacio-abajo">
+        <Swiper pagination={true} navigation= {true} modules={[Pagination, Navigation ]} className="mySwiper">
+            <a  href='https://www.facebook.com/watch/?v=521585079352621'>
+                <SwiperSlide >
+                    <div className="Cat-imagen2 w-100" >
+                        <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
+                            <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                        </div>
                     </div>
-                </Row>
-            </Container>
+                </SwiperSlide>
+            </a>
+            <SwiperSlide>
+                <div className="Cat-imagen3 w-100" >
+                    <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
+                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="Cat-imagen4 w-100" >
+                    <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
+                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="Cat-imagen5 w-100" >
+                    <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
+                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                    </div>
+                 </div>
+            </SwiperSlide>
+        </Swiper>
+    </div>
+</Row>
+</Container>
             {/* VIDEO PRIMER MAQUINA EN VENTA*/}
             <Container>
                 <div className='col-12 imagen-de-video mb-5 mt-5 d-flex  '>

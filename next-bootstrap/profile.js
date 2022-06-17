@@ -53,6 +53,25 @@ export const Navar = [
 
 ]
 
+
+export const Gruas1 = [
+    {
+        variable: 'año:',
+        content:'2014'
+    },
+  
+    {
+        variable: 'odometro:',
+        content:'11.037'
+    },
+    {
+        variable: 'condicion:',
+        content:'USADA, Perfecto estado.'
+    },
+  
+  
+  ]
+
 export const Brands2 =() => {
     return(
         <Swiper 
