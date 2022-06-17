@@ -25,14 +25,7 @@ export const Nosotros = [
         img: '/assets/4-conseguimos.png',
         text: 'Mini cargador'
     },
-
-
-    
-    
-
 ]
-
-
 export const Navar = [
     {
         texto: 'quienes somos',
@@ -52,6 +45,36 @@ export const Navar = [
     },
 
 ]
+export const Gruas4 = [
+    {
+        variable: 'año:',
+        content:'2011'
+    },
+    {
+        variable: 'odometro:',
+        content:'4,300 horas'
+    },
+    {
+        variable: 'condicion:',
+        content:'usada,Perfecto estado.'
+    },
+    {
+        variable:'Precio:',
+        content:'$55,000 USD'
+    }
+  ]
+
+export const Gruas3 = [
+    {
+        variable: 'capacidad:',
+        content:'Desde 20 a 80 toneladas.'
+    },
+    {
+        variable: 'condicion:',
+        content:'usada,Perfecto estado.'
+    },
+  ]
+
 
 
 export const Gruas1 = [
@@ -68,9 +91,29 @@ export const Gruas1 = [
         variable: 'condicion:',
         content:'USADA, Perfecto estado.'
     },
-  
-  
   ]
+
+
+  export const Gruas2 = [
+    {
+        variable: 'año:',
+        content:'2013'
+    },
+    {
+        variable: 'odometro:',
+        content:'-'
+    },
+    {
+        variable: 'condicion:',
+        content:'usada,Perfecto estado.'
+    },
+    {
+        variable:'Precio:',
+        content:'$145,000 USD'
+    }
+  ]
+
+
 
 export const Brands2 =() => {
     return(
@@ -79,6 +122,8 @@ export const Brands2 =() => {
         spaceBetween={10}
         slidesPerView={1}
         centeredSlides={false}
+        pagination={true}
+        navigation={true}
         breakpoints={{
           768: {
             slidesPerView: 4,
@@ -93,39 +138,39 @@ export const Brands2 =() => {
             spaceBetween: 30,
           },
         }}
-        className="mySwiper">
+        className="mySwiper-4">
                 <SwiperSlide>
-                    <div >
+                    <div  className="mb-5" >
                         <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
                         <p className='d-flex justify-content-center'>Rodillo compactador</p> 
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div>
+                    <div className="mb-5">
                         <Image src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Dumper</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div>
+                    <div className="mb-5">
                         <Image src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Hormigonera todo terreno</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div>
+                    <div className="mb-5">
                         <Image src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Camion bomba de hormigon </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div>
+                    <div className="mb-5">
                         <Image src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Camiones volquetes articulados </p>
+                        <p className='d-flex justify-content-center'>Camiones volquetes articulado </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div>
+                    <div className="mb-5">
                         <Image src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
                     </div>

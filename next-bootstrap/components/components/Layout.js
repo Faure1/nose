@@ -19,7 +19,7 @@ const Layout = ({children}) => {
               <Nav className="me-auto mx-auto d-flex  ">
                 {
                   Navar.map(({texto, clas, href}, i) =>(
-                    <div>
+                    <div className='text-center'>
                       <Nav.Link className= {clas} href= {href}>{texto}</Nav.Link>
                     </div>
                   ))

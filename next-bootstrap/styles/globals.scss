@@ -59,6 +59,13 @@ h2{
   font-weight: 400;
   line-height: 24px;
 }
+.a{
+  align-items: end;
+  justify-content: end;
+  justify-items: end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
 /*  intentar borrar nose porque  no anda */
 .div-info-lado{
   text-align: start;
@@ -144,18 +151,18 @@ h2{
 	background:  url(../public/assets/2-swiper-8.png) center center / contain  no-repeat;
 }
 .swiper-button-next{ 
-  width: 48px !important;
-  height: 48px !important;
+  width: 45px !important;
+  height: 45px !important;
   background: rgba(4, 4, 4, 0.7) !important;
   color: #fff !important;
   top: 95% !important;
  }
 .swiper-button-prev{ 
-  width: 48px !important;
-  height: 48px !important;
+  width: 45px !important;
+  height: 45px !important;
   background: rgba(4, 4, 4, 0.7) !important;
   color: #fff !important;
-  top: 95% !important;
+  top: 96% !important;
  }
 .swiper-pagination-bullet{
   background: grey !important;
@@ -217,6 +224,26 @@ h2{
     border-radius: 30% !important;
   }
 }
+
+.mySwiper-4{
+  .swiper-button-next{ 
+    width: 45px !important;
+    height: 45px !important;
+    background: rgba(4, 4, 4, 0.7) !important;
+    color: #fff !important;
+    top: 89% !important;
+   }
+  .swiper-button-prev{ 
+    width: 45px !important;
+    height: 45px !important;
+    background: rgba(4, 4, 4, 0.7) !important;
+    color: #fff !important;
+    top: 89% !important;
+   }
+}
+
+
+
 @media (max-width: 768px){
   .imagen-de-video{
     height: 394px;
