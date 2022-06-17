@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Image from 'next/image'
+import {Navar} from '../../profile'
 import { Nav, Navbar,  Container, Button, } from 'react-bootstrap'
 
 
@@ -9,16 +10,20 @@ import { Nav, Navbar,  Container, Button, } from 'react-bootstrap'
 
 const Layout = ({children}) => {
   return ( 
-    <main>  
+    <>  
       <Navbar collapseOnSelect expand="lg" sticky="top" bg='white'>
           <Container>
-            <Nav.Link ><Image  src='/assets/logo.PNG'  width={135} height={33} layout='intrinsic'/> </Nav.Link>
+            <Nav.Link ><Image  src='/assets/logo.PNG'  width={135} height={33} layout='intrinsic'/></Nav.Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
               <Nav className="me-auto mx-auto d-flex  ">
-                <Nav.Link className='text-dark'  href="#Quienessomos">quienes somos</Nav.Link>
-                <Nav.Link className='text-dark' href="#maquinarias">maquinarias</Nav.Link>
-                <Nav.Link  className='text-dark' href="#testimonios">testimonios</Nav.Link>
+                {
+                  Navar.map(({texto, clas, href}, i) =>(
+                    <div>
+                      <Nav.Link className= {clas} href= {href}>{texto}</Nav.Link>
+                    </div>
+                  ))
+                }
               </Nav>
               <Nav>
                 <Button className='d-inline' variant="dark">contactanos</Button>
@@ -27,12 +32,12 @@ const Layout = ({children}) => {
           </Container>
       </Navbar>
       {children}
-      <div className='footer text-white d-flex justify-content-center align-items-center bg-dark' >
+      <div className='text-white d-flex justify-content-center  bg-dark ' >
         <div >
-          <p >Big Dick Industries / From NFS</p>
+          <p ><span className='ancho-letra-copy'> © </span> DivGeeks Industries/ From SFFN</p>
         </div>
       </div>
-    </main>
+    </>
   );
 }
 export default Layout;

@@ -18,8 +18,30 @@ export const Nosotros = [
         img: '/assets/4-conseguimos.png',
         text: 'Mini cargador'
     },
+
+
     
     
 
 ]
 
+
+export const Navar = [
+    {
+        texto: 'quienes somos',
+        clas: 'text-dark',
+        href: '/a donde valla'
+    },
+    {
+        texto: 'maquinarias',
+        clas: 'text-dark',
+        href: '/a donde valla'
+
+    },
+    {
+        texto: 'testimonios',
+        clas: 'text-dark',
+        href: '/a donde valla'
+    },
+
+]
