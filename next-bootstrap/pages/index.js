@@ -6,20 +6,12 @@ import "swiper/css/bundle";
 
 
 
-
-
-
-
 export default function Home() {
   return (
     <div>
-    <Layout>
-    <Body/>
-  
-    </Layout>
-   
-
+      <Layout>
+        <Body/>
+      </Layout>
     </div>
-
   )
 }

@@ -8,39 +8,31 @@ import { Nav, Navbar,  Container, Button, } from 'react-bootstrap'
 
 
 const Layout = ({children}) => {
-    return ( 
-
-  <main>  
-    <Navbar collapseOnSelect expand="lg" sticky="top" bg='white'>
-        <Container>
-        <Nav.Link classname=''><Image  src='/assets/logo.PNG'  width={135} height={33} layout='intrinsic'/> </Nav.Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
-            <Nav className="me-auto d-flex ">
-              <Nav.Link  href="#Quienessomos">quienes somos</Nav.Link>
-              <Nav.Link  href="#maquinarias">maquinarias</Nav.Link>
-              <Nav.Link  href="#testimonios">testimonios</Nav.Link>
-            </Nav>
-            <Nav>
-            <Button className='d-inline' variant="dark">contactanos</Button>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-    </Navbar>
- 
-
-  {children}
-
-
-
-
-  <div className='footer  ' >
-    <div >
-      <p >Big Dick Industries / From NFS</p>
-    </div>
-  </div>
-
-  </main>
+  return ( 
+    <main>  
+      <Navbar collapseOnSelect expand="lg" sticky="top" bg='white'>
+          <Container>
+            <Nav.Link ><Image  src='/assets/logo.PNG'  width={135} height={33} layout='intrinsic'/> </Nav.Link>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
+              <Nav className="me-auto mx-auto d-flex  ">
+                <Nav.Link className='text-dark'  href="#Quienessomos">quienes somos</Nav.Link>
+                <Nav.Link className='text-dark' href="#maquinarias">maquinarias</Nav.Link>
+                <Nav.Link  className='text-dark' href="#testimonios">testimonios</Nav.Link>
+              </Nav>
+              <Nav>
+                <Button className='d-inline' variant="dark">contactanos</Button>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+      </Navbar>
+      {children}
+      <div className='footer text-white d-flex justify-content-center align-items-center bg-dark' >
+        <div >
+          <p >Big Dick Industries / From NFS</p>
+        </div>
+      </div>
+    </main>
   );
 }
 export default Layout;

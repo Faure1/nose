@@ -1,281 +1,129 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
-
-
-
-
-.navMedio{
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-
-}
 .footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  background-color: black;
-  color: white;
-  width: 100%;
   height: 50px;
 }
-
-body, html {
-  height: 100%;
-}
 .hero {
-  display: flex;
 	height: 668px;
 	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url(../public/assets/Frame940.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 12px;
-
 }
-
-.mediohero{
-  text-align: center;
-  align-items: center;
-}
-.mediohero-info{
-  text-align: center;
-  align-items: center;
-
-}
-.padding{
+/*  intentar borrar nose porque mb-40 no anda */
+.padding{ 
   margin-bottom: 40px;
 }
+/*  intentar borrar nose porque mb-25 no anda */
 .mediohero-excavator{
-  text-align: center;
-
   margin-bottom: 25px;
 }
-.div-float{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-
-}
-.div-float2{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: start;
-
-}
-.Cat-imagen{
-  display: flex;
-  width: auto;
+.Cat-imagen{ 
   height: 500px;
 	background:  url(../public/assets/CAT336.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
-  
 }
 .vendido-imagen{
-  display: flex;
-  width: auto;
   height: 500px;
 	background:  url(../public/assets/img-recien-vendido.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
-  
 }
-
-
 .quienes-somos{
   font-family: Montserrat;
-font-size: 38px;
-font-weight: 700;
-line-height: 46px;
-letter-spacing: 0em;
-text-align: center;
-color: #fff;
-margin-top:90px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-top:90px;
 }
-
-.quienes-somoss{
-  margin-top:10px;
-}
-
+/*  intentar borrar nose porque mt-40 no anda */
 .quienes-somos-2{
   margin-top: 40px;
-  color: #fff;
 }
 h1 {
   font-family: Montserrat;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
-  letter-spacing: 0em;
-  text-align: center;
-
-  
 }
+/*  intentar borrar nose porque ML-9 Y mR-9 no anda */
 .espacio-8{
   margin-left: 9px;
   margin-right: 9px;
 }
 .imagen-de-video{
   height: 580px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
   margin-top: 56px;
   background:  url(../public/assets/Frame940.png) center center  no-repeat ;
   margin-bottom: 56px;
 }
 .boton-video{
-  text-decoration: none;
   height: 100px;
   width: 68px;
 }
 h3{
   font-family: Inter;
-font-size: 28px;
-font-weight: 400;
-line-height: 34px;
-letter-spacing: 0em;
-text-align: center;
-color: #fff;
-}
-.texto-medio{
-  display: flex;
-  align-items: center;
-  margin: 30px;
-  justify-content: center;
-
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
 }
 .hero2 {
 	height: 390px;
 	background:   linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url(../public/assets/Frame992.png) center center / cover no-repeat;
-
 }
-
-.goku1{
-  height: auto;
-  width: 100%;
+/*  intentar borrar nose porque mb-40 no anda */
+.espacio-abajo{
+  margin-bottom: 40px;
 }
-
+/*  intentar borrar nose porque mt-40  y mb-90 no anda */
 .quienes-somos-container{
-  
-
-  margin: 0px  auto;
   margin-top: 40px;
   margin-bottom: 90px;
 }
-
-.medio-altura{
-  text-align: center;
-}
-
 h2{
-
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: 0em;
-
-
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
 }
 .texto-hero2{
-
   font-family: Inter;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #fff;
-}
-.medio-altura{
-  text-align: center;
 }
 .lado-izquierdo{
-  display: inline;
-  font-family: Inter;
-  font-size: 15px;
-  font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.01em;
-color: rgba(67, 78, 86, 1);
-
-}
-.div-info-ado-izquierdo  {
-  text-align: start;
-}
-.div-info-lado-derecho{
-  text-align: start;
-}
-.lado-derecho{
-  display: inline;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.01em;
-  color: black;
-
 }
-.texto-de-info-medio{
-  justify-content: center;
-
+/*  intentar borrar nose porque  no anda */
+.div-info-lado{
+  text-align: start;
 }
 .titulos-venta{
   font-family: Montserrat;
-font-size: 28px;
-font-weight: 700;
-line-height: 34px;
-letter-spacing: 0em;
-color: black;
-
-
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
 }
-.div-lado-derecho{
-  width: 40%;
-}
+/*  intentar borrar nose porque mt-40 no anda */
 .quienes-somos-container-2{
   margin-top: 40px;
-  margin-bottom:0px ;
 }
-.conseguimos-imagenes{
-  margin-top: 56px;
-}
+/*  intentar borrar nose porque mt-40 y mb-40 no anda */
 .espacio-arriba-muchomas{
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
+/*  intentar borrar nose porque mb-56 no anda */
 .y-mucho-mas{
   margin-bottom: 56px;
 }
-
-.color-h3{
-  color: black;
-
-}
-
-
-
-
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   height: 100%;
   width: 100%;
-  text-align: center;
   font-size: 18px;
-  background: #fff;
-  
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,120 +138,72 @@ color: black;
   -webkit-align-items: center;
   align-items: center;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
+/*  intentar borrar nose porque  no anda con bootstrap */
 .andrea{
   font-weight: 500;
   margin-bottom: 17px;
 }
-
-
 .Cat-imagen2{
-  display: flex;
   height: 500px;
-  width: 100%;
 	background:  url(../public/assets/image23.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
-  
 }
 .Cat-imagen3{
-  display: flex;
   height: 500px;
-  width: 100%;
 	background:  url(../public/assets/2-imagen-swiper.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
-  
 }
 .Cat-imagen4{
-  display: flex;
   height: 500px;
-  width: 100%;
 	background:  url(../public/assets/3-imagen-swiper.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
-  
 }
 .Cat-imagen5{
-  display: flex;
   height: 500px;
-  width: 100%;
 	background:  url(../public/assets/4-imagen-swiper.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
 }
 .swiper2-1{
-  display: flex;
   height: 500px;
-  width: 100%;
 	background:  url(../public/assets/2-swiper-1.png) center center / cover no-repeat;
-  align-items: center;
   margin-bottom: 56px;
 }
 .swiper2-2{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-2.png) center center / cover no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-2.png) center center / contain no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-3{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-3.png) center center / cover no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-3.png) center center / contain no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-4{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-4.png) center center / cover no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-4.png) center center / contain no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-5{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-5.png) center center / cover no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-5.png) center center / contain no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-6{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-6.png) center center / cover  no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-6.png) center center / contain  no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-7{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-7.png) center center / cover no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-7.png) center center / contain no-repeat;
   margin-bottom: 56px;
 }
 .swiper2-8{
-  display: flex;
   height: 500px;
-  width: 100%;
-	background:  url(../public/assets/2-swiper-8.png) center center / cover  no-repeat;
-  align-items: center;
+	background:  url(../public/assets/2-swiper-8.png) center center / contain  no-repeat;
   margin-bottom: 56px;
 }
+/*  intentar borrar nose porque  mb-40 no anda con bootstrap */
 .margin-abajo{
   margin-bottom: 40px;
 }
@@ -411,8 +211,6 @@ color: black;
   width: 48px !important;
   height: 48px !important;
   background: rgba(4, 4, 4, 0.7) !important;
-  background-size: 30% !important;
-  padding: 5px !important;
   color: #fff !important;
   top: 95% !important;
  }
@@ -420,16 +218,11 @@ color: black;
   width: 48px !important;
   height: 48px !important;
   background: rgba(4, 4, 4, 0.7) !important;
-  padding: 5px !important;
   color: #fff !important;
   top: 95% !important;
-  
  }
 .swiper-pagination-bullet{
   background: grey !important;
-  width: 10px !important;
-  height: 10px !important;
-
 }
 .swiper-pagination-bullet-active {
   width: 32px !important;
@@ -437,10 +230,7 @@ color: black;
   background: rgba(255, 186, 66, 1) !important;
   border-radius: 30% !important;
 }
-.tamaño-swiper-testimonio{
-  height: 100%;
-  margin-bottom: 90px;
-}
+/*  intentar borrar nose porque  mb-56 no anda con bootstrap */
 .prueba{
   margin-bottom: 56px;
 }
@@ -449,23 +239,19 @@ color: black;
     width: 48px !important;
     height: 48px !important;
     background: rgba(4, 4, 4, 0.7) !important;
-    background-size: 30% !important;
-    padding: 5px !important;
     color: #fff !important;
-    top: 88% !important;
+    top: 89% !important;
     right: 20% !important;
-   }
+  }
   .swiper-button-prev{ 
     width: 48px !important;
     height: 48px !important;
     background: rgba(4, 4, 4, 0.7) !important;
-    padding: 5px !important;
     color: #fff !important;
-    top: 88% !important;
+    top: 89% !important;
     left: 20% !important;
-
-   }
-   .swiper {
+  }
+  .swiper {
     height: 500px;
     width: 100%;
   }
@@ -474,8 +260,7 @@ color: black;
     width: 100%;
     text-align: center;
     font-size: 18px;
-    background: #fff;
-    
+    background: #fff; 
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -490,14 +275,6 @@ color: black;
     -webkit-align-items: center;
     align-items: center;
   }
-
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .swiper-pagination-bullet{
     background: grey !important;
   }
@@ -508,173 +285,143 @@ color: black;
     border-radius: 30% !important;
   }
 }
-
 .new{
-  display: flex;
   height: 116px;
   width: 196px;
 	background:  url(../public/assets/new-sin.png) center center / contain  no-repeat;
-  align-items: center;
   margin-bottom: 56px;
 }
 .new:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/log-holland.png) center center / contain  no-repeat;
 }
 .bobcat{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/bocat-sin.png) center center / contain   no-repeat;
 }
 .bobcat:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-bobcat.png) center center / contain  no-repeat;
 }
 .case{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/case-sin.png) center center / contain  no-repeat;
 }
 .case:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-case.png) center center / contain  no-repeat;
 }
 .cat{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/cat-sin.png) center center / contain  no-repeat;
 }
 .cat:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-cat.png) center center / contain  no-repeat;
 }
 .cater{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/cater-sin.png) center center / contain  no-repeat;
 }
 .cater:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-caterpillar.png) center center / contain  no-repeat;
 }
 .doosan{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/doosan-sin.png) center center / contain  no-repeat;
 }
 .doosan:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-doosan.png) center center / contain  no-repeat;
 }
 .hitachi{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/hitachi-sin.png) center center / contain  no-repeat;
 }
 .hitachi:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-hitachi.png) center center / contain  no-repeat;
 }
 .hyundai{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/hyundai-sin.png) center center / contain  no-repeat;
 }
 .hyundai:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-hyundai.png) center center / contain  no-repeat;
 }
 .jcb{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/jcb-sin.png) center center / contain  no-repeat;
 }
 .jcb:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-jcb.png) center center / contain  no-repeat;
 }
 .john{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/john-sin.png) center center / contain  no-repeat;
 }
 .john:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-joh-Deere.png) center center / contain  no-repeat;
 }
 .komatsu{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/komatsu-sin.png) center center / contain  no-repeat;
 }
 .komatsu:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-jomatsu.png) center center / contain  no-repeat;
 }
 .kubata{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/kubata-sin.png) center center / contain  no-repeat;
 }
 .kubata:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-kubota.png) center center / contain  no-repeat;
 }
 .liebherr{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/liebherr-sin.png) center center / contain  no-repeat;
 }
 .liebherr:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-liebherr.png) center center / contain  no-repeat;
 }
 .volvo{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/volvo-sin.png) center center / contain  no-repeat;
 }
 .volvo:hover{
-  display: flex;
   height: 116px;
   width: 196px;
   background:  url(../public/assets/logo-volvo.png) center center / contain  no-repeat;
@@ -682,25 +429,16 @@ color: black;
 @media (max-width: 768px){
   .imagen-de-video{
     height: 394px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
     margin-top: 56px;
     margin-bottom: 56px;
     background:  url(../public/assets/Frame940.png) center center  no-repeat ;
   }
-
 }
 @media (max-width: 320px){
   .imagen-de-video{
     height: 222px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
     margin-top: 56px;
     margin-bottom: 56px;
     background:  url(../public/assets/Frame940.png) center center  no-repeat ;
   }
 }
-
-
