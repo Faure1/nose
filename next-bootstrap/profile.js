@@ -30,18 +30,18 @@ export const Navar = [
     {
         texto: 'quienes somos',
         clas: 'text-dark',
-        href: '/a donde valla'
+        href: '#Quienessomos'
     },
     {
         texto: 'maquinarias',
         clas: 'text-dark',
-        href: '/a donde valla'
+        href: '#maquinarias'
 
     },
     {
         texto: 'testimonios',
         clas: 'text-dark',
-        href: '/a donde valla'
+        href: '#testimonios'
     },
 
 ]
