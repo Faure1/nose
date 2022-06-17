@@ -15,9 +15,9 @@ const Body = () => {
             {/* PRIMER HERO*/}
             <div className="hero  d-flex align-items-center col-12 " >
                 <Container >
-                    <Row className='d-flex justify-content-center align-items-center  text-center'>
-                        <div>
-                            <h1 className='quienes-somos text-white' >Máquinas para el desarrollo</h1>
+                    <Row className='d-flex justify-content-center  text-center'>
+                        <div className='d-flex justify-content-center '>
+                            <h1 className='quienes-somos  text-white' >Máquinas para el desarrollo</h1>
                         </div>
                     </Row>
                     <Row  className='d-flex justify-content-center align-items-center text-center '>
@@ -32,14 +32,14 @@ const Body = () => {
             </div>
             {/* QUIENES SOMOS*/}
             <div >
-                <h1 id='Quienessomos' className="text-dark d-flex justify-content-center quienes-somos">¿Quienes somos?</h1>
+                <h1 id='Quienessomos' className="text-dark d-flex justify-content-center quienes-somos mt-5">¿Quienes somos?</h1>
             </div>
             <div className='d-flex justify-content-center'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* QUIENES SOMOS CONTENEDOR*/}
-            <Container className="quienes-somos-container">
-                <Row>
+            <Container className="mt-5 mb-5">
+                <Row>   
                     <div className="col-12 order-1 order-lg-0 col-lg-6 d-flex  justify-content-center align-items-center ">
                         <div >
                             <div className='text-center'>
@@ -50,7 +50,7 @@ const Body = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-1 col-lg-6  espacio-abajo ">
+                    <div className="col-12 order-0 order-lg-1 col-lg-6  mb-5 ">
                         <div>
                             <img src="./assets/2imagen.png" className="w-100 h-auto "/>
                         </div>
@@ -62,20 +62,20 @@ const Body = () => {
                 <Container >
                     <Row className='d-flex justify-content-center align-items-center text-center'>
                         <div>
-                            <h1 className="quienes-somos text-white quienes-somos-2"> Nuestro servicio </h1>
+                            <h1 className="quienes-somos text-white mt-5"> Nuestro servicio </h1>
                         </div>
                     </Row>
-                    <Row className='d-flex justify-content-center align-items-center text-center padding'>
+                    <Row className='d-flex justify-content-center align-items-center text-center mb-4'>
                         <div>
                             <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
                         </div>
                     </Row>
-                    <Row className='d-flex justify-content-center text-center align-items-center mediohero-excavator '>
-                        <div>
+                    <Row className='d-flex justify-content-center text-center align-items-center mt-3 mb-4 '>
+                        <div >
                             <Image src='/assets/excavator.png'  width={56} height={54} layout='intrinsic'></Image>
                         </div>
                     </Row>
-                    <Row  className='d-flex justify-content-center text-center align-items-center  '>
+                    <Row  className='d-flex justify-content-center text-center align-items-center mt-3 '>
                         <div >
                             <h2 className='text-light'>Venta de maquinaria usada</h2>
                         </div> 
@@ -89,13 +89,13 @@ const Body = () => {
             </div>
             {/* MAQUINARIA EN VENTA*/}
             <div >
-                <h1 id='maquinarias' className="text-dark d-flex justify-content-center quienes-somos">Maquinaria en venta</h1>
+                <h1 id='maquinarias' className="text-dark d-flex justify-content-center mt-5 quienes-somos">Maquinaria en venta</h1>
             </div>
-            <div className='d-flex justify-content-center margin-abajo'>
+            <div className='d-flex justify-content-center mb-5'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Primer MAQUINARIA EN VENTA*/}
-            <Container className="margin-bottom-56px">
+            <Container>
                 <Row>
                     <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 text-center align-items-center">
                         <div className='col-12 '>
@@ -134,33 +134,33 @@ const Body = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-0 col-lg-6  espacio-abajo">
+                    <div className="col-12 order-0 order-lg-0 col-lg-6  mb-5 ">
                         <Swiper pagination={true} navigation= {true} modules={[Pagination, Navigation ]} className="mySwiper">
                             <a  href='https://www.facebook.com/watch/?v=521585079352621'>
                                 <SwiperSlide >
-                                    <div className="Cat-imagen2 w-100" >
-                                        <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
+                                    <div className="Cat-imagen2 w-100 mb-5" >
+                                        <div className='w-100 h-100 d-flex align-items-end justify-content-end  '>
                                             <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                             </a>
                             <SwiperSlide>
-                                <div className="Cat-imagen3 w-100" >
+                                <div className="Cat-imagen3 w-100 mb-5" >
                                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
                                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="Cat-imagen4 w-100" >
+                                <div className="Cat-imagen4 w-100 mb-5" >
                                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
                                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="Cat-imagen5 w-100" >
+                                <div className="Cat-imagen5 w-100 mb-5" >
                                     <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
                                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                     </div>
@@ -172,7 +172,7 @@ const Body = () => {
             </Container>
             {/* VIDEO PRIMER MAQUINA EN VENTA*/}
             <Container>
-                <div className='col-12 imagen-de-video d-flex  '>
+                <div className='col-12 imagen-de-video mb-5 mt-5 d-flex  '>
                     <Container className=' d-flex justify-content-center text-center align-items-center'>
                         <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' rel="noopener noreferrer" className='boton-video'> <Button   variant="light"> <Image src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
                     </Container>
@@ -181,7 +181,7 @@ const Body = () => {
             {/* segunda MAQUINA VENTA*/}
             <Container className="margin-bottom-56px">
                 <Row>
-                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center espacio-abajo">
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center mb-5 ">
                         <div className='col-12 '>
                             <div>
                                 <h1 className='titulos-venta'>Excavadora CAT 336 ELH</h1>
@@ -222,7 +222,7 @@ const Body = () => {
                         </div>
                     </div>
                     <div className="col-12 order-0 order-lg-1 col-lg-6 ">
-                        <div className="Cat-imagen">
+                        <div className="Cat-imagen mb-5">
                             <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
                                 <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                             </div>
@@ -261,35 +261,35 @@ const Body = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-0 col-lg-6 espacio-abajo">
+                    <div className="col-12 order-0 order-lg-0 col-lg-6 mb-5 ">
                         <Swiper pagination={true} navigation={true} slidesPerView={1} spaceBetween={20} centeredSlides={true} modules={[Pagination, Navigation]} className="mySwiper">
                             <SwiperSlide >
-                                <div className="swiper2-1 w-100" >
+                                <div className="swiper2-1 mb-5 w-100" >
                                     <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
                                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div className="swiper2-2 w-100" > </div>
+                                <div className="swiper2-2 mb-5 w-100" > </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div className="swiper2-3 w-100" >  </div>
+                                <div className="swiper2-3 mb-5 w-100" >  </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div className="swiper2-4 w-100" > </div>
+                                <div className="swiper2-4 mb-5 w-100" > </div>
                             </SwiperSlide>      
                             <SwiperSlide >
-                                <div className="swiper2-5 w-100" > </div>
+                                <div className="swiper2-5 mb-5 w-100" > </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="swiper2-6 w-100" > </div>
+                                <div className="swiper2-6 mb-5 w-100" > </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="swiper2-7 w-100" > </div>
+                                <div className="swiper2-7 mb-5 w-100" > </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="swiper2-8 w-100" > </div>
+                                <div className="swiper2-8 mb-5 w-100" > </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -297,12 +297,12 @@ const Body = () => {
             </Container>       
             {/* Nosotros te lo conseguimos*/}
             <div >
-                <h1 className="text-dark d-flex justify-content-center quienes-somos">Nosotros te lo conseguimos</h1>
+                <h1 className="text-dark d-flex justify-content-center mt-5 quienes-somos">Nosotros te lo conseguimos</h1>
             </div>
             <div className='d-flex justify-content-center'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
-            <div className='quienes-somos-container-2 text-center align-items-center '>
+            <div className='mt-4 text-center align-items-center '>
                 <p className=' d-flex justify-content-center '>¿Tienes un proyecto y necesitas maquinaria pesada de segunda mano?  </p>
                 <p className='text-dark d-flex justify-content-center align-item-center'>¡Cuenta con nosotros! Te traemos la maquinaria deseada por flotas o individual desde Estados unidos o Europa. </p>
             </div>
@@ -327,9 +327,9 @@ const Body = () => {
                 </Row>
             </Container>
             {/*  Y mucho mas*/}
-            <Container className='espacio-arriba-muchomas text-center align-items-center '>
+            <Container className='mt-5 mb-5 text-center align-items-center '>
                     <div >
-                        <h2 className=" d-flex justify-content-center y-mucho-mas">Y MUCHO MAS</h2>
+                        <h2 className=" d-flex justify-content-center mb-5 ">Y MUCHO MAS</h2>
                     </div>
             </Container>
             {/* Swiper de Y mucho mas*/}     
@@ -373,13 +373,14 @@ const Body = () => {
             </Swiper>
             {/* Marcas comerciales*/}
             <div >
-                <h1 className="text-dark d-flex justify-content-center quienes-somos">Marcas comerciales</h1>
+                <h1 className="text-dark d-flex justify-content-center quienes-somos mt-5">Marcas comerciales</h1>
             </div>
-            <div className='d-flex justify-content-center padding'>
+            <div className='d-flex justify-content-center mb-4'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/*Swiper de  Marcas comerciales*/}
-            <Swiper slidesPerView={10} loop={true} spaceBetween={30} centeredSlides={true} autoplay={{ delay: 1500, disableOnInteraction: false}} modules={[Autoplay ]} className="mySwiper3" >
+            <Swiper slidesPerView={10} loop={true} spaceBetween={30} centeredSlides={true} autoplay={{ delay: 1500, disableOnInteraction: false}} modules={[Autoplay ]}
+             className="mySwiper3 mt-3" >
                 <SwiperSlide>
                     <div className='new'> </div>
                 </SwiperSlide>
@@ -427,11 +428,11 @@ const Body = () => {
             <div >
                 <h1 className="text-dark d-flex justify-content-center mt-10">Recien vendida</h1>
             </div>
-            <div className='d-flex justify-content-center padding'>
+            <div className='d-flex justify-content-center mb-5'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Recien vendida container*/}
-            <Container className="margin-bottom-56px">
+            <Container >
                 <Row>
                     <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center">
                         <div className='col-12 '>
@@ -474,7 +475,7 @@ const Body = () => {
                         </div>
                     </div>
                     <div className="col-12 order-0 order-lg-1 col-lg-6 ">
-                        <div className="vendido-imagen">
+                        <div className="vendido-imagen mb-5 mt-5">
                             <div className=' w-100 h-100 d-flex  align-items-start justify-content-start '>
                                 <Image  src='/assets/logo-vendido.png'  width={158} height={161} layout='intrinsic'></Image>
                             </div>
@@ -483,22 +484,22 @@ const Body = () => {
                 </Row>
             </Container>         
             {/* testimonios*/}
-            <div >
-                <h1 id='testimonios' className="text-dark d-flex justify-content-center quienes-somos">Testimonios</h1>
+            <div className='mt-5' >
+                <h1 id='testimonios' className="text-dark d-flex justify-content-center quienes-somos  ">Testimonios</h1>
             </div>
-            <div className='d-flex justify-content-center padding '>
+            <div className='d-flex justify-content-center mb-4 '>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Swiper de testimonios*/}
-            <Container className="margin-bottom-56px espacio-abajo">
+            <Container className=" mb-5 ">
                 <Row className='d-flex justify-content-center'>
                     <div className="col-12 ">
                         <Swiper slidesPerView={1} pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper2" >
                             <SwiperSlide >
-                                <Container>
+                                <Container className='mb-5'>
                                     <Row>
                                         <div className='d-flex justify-content-center'>
-                                            <h2 className='andrea'>Andrea</h2>
+                                            <h2 className='andrea mb-3'>Andrea</h2>
                                         </div>
                                     </Row>
                                     <Row>
@@ -506,13 +507,13 @@ const Body = () => {
                                             <div>
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
@@ -530,10 +531,10 @@ const Body = () => {
                                 </Container>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <Container>
+                                <Container className='mb-5'>
                                     <Row>
                                         <div className='d-flex justify-content-center'>
-                                            <h2 className='andrea'>Lautaro</h2>
+                                            <h2 className='andrea mb-3'>Lautaro</h2>
                                         </div>
                                     </Row>
                                     <Row>
@@ -541,13 +542,13 @@ const Body = () => {
                                             <div>
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic' ></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
@@ -556,7 +557,7 @@ const Body = () => {
                                         </div>
                                     </Row>  
                                     <div className=' d-flex justify-content-center align-items-center text-center '>
-                                        <div className='d-flex justify-content-center text-center align-items-centercol-12 col-lg-5 '>
+                                        <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
                                             <p>
                                                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
                                             </p>
@@ -565,10 +566,10 @@ const Body = () => {
                                 </Container>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <Container>
+                                <Container className='mb-5'>
                                     <Row>
                                         <div className='d-flex justify-content-center'>
-                                            <h2 className='andrea'>Santiago</h2>
+                                            <h2 className='andrea mb-3'>Santiago</h2>
                                         </div>
                                     </Row>
                                     <Row>
@@ -576,13 +577,13 @@ const Body = () => {
                                             <div>
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
@@ -600,10 +601,10 @@ const Body = () => {
                                 </Container>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <Container className='prueba'>
+                                <Container className='mb-5'>
                                     <Row>
                                         <div className='d-flex justify-content-center'>
-                                            <h2 className='andrea'>Andrea</h2>
+                                            <h2 className='andrea mb-3'>Nicolas</h2>
                                         </div>
                                     </Row>
                                     <Row>
@@ -611,13 +612,13 @@ const Body = () => {
                                             <div>
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
-                                            <div className='espacio-8' >
+                                            <div className='ms-2 me-2' >
                                                 <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div>

@@ -3,34 +3,19 @@
 	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url(../public/assets/Frame940.png) center center / cover no-repeat;
   margin-bottom: 12px;
 }
-/*  intentar borrar nose porque mb-40 no anda */
-.padding{ 
-  margin-bottom: 40px;
-}
-/*  intentar borrar nose porque mb-25 no anda */
-.mediohero-excavator{
-  margin-bottom: 25px;
-}
 .Cat-imagen{ 
   height: 500px;
 	background:  url(../public/assets/CAT336.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .vendido-imagen{
   height: 500px;
 	background:  url(../public/assets/img-recien-vendido.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .quienes-somos{
   font-family: Montserrat;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
-  margin-top:90px;
-}
-/*  intentar borrar nose porque mt-40 no anda */
-.quienes-somos-2{
-  margin-top: 40px;
 }
 h1 {
   font-family: Montserrat;
@@ -38,16 +23,9 @@ h1 {
   font-weight: 700;
   line-height: 46px;
 }
-/*  intentar borrar nose porque ML-9 Y mR-9 no anda */
-.espacio-8{
-  margin-left: 9px;
-  margin-right: 9px;
-}
 .imagen-de-video{
   height: 580px;
-  margin-top: 56px;
   background:  url(../public/assets/Frame940.png) center center  no-repeat ;
-  margin-bottom: 56px;
 }
 .boton-video{
   height: 100px;
@@ -62,15 +40,6 @@ h3{
 .hero2 {
 	height: 390px;
 	background:   linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url(../public/assets/Frame992.png) center center / cover no-repeat;
-}
-/*  intentar borrar nose porque mb-40 no anda */
-.espacio-abajo{
-  margin-bottom: 40px;
-}
-/*  intentar borrar nose porque mt-40  y mb-90 no anda */
-.quienes-somos-container{
-  margin-top: 40px;
-  margin-bottom: 90px;
 }
 h2{
   font-family: Montserrat;
@@ -100,19 +69,6 @@ h2{
   font-weight: 700;
   line-height: 34px;
 }
-/*  intentar borrar nose porque mt-40 no anda */
-.quienes-somos-container-2{
-  margin-top: 40px;
-}
-/*  intentar borrar nose porque mt-40 y mb-40 no anda */
-.espacio-arriba-muchomas{
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-/*  intentar borrar nose porque mb-56 no anda */
-.y-mucho-mas{
-  margin-bottom: 56px;
-}
 .swiper {
   width: 100%;
   height: 100%;
@@ -135,74 +91,57 @@ h2{
   -webkit-align-items: center;
   align-items: center;
 }
-/*  intentar borrar nose porque  no anda con bootstrap */
 .andrea{
   font-weight: 500;
-  margin-bottom: 17px;
 }
 .Cat-imagen2{
   height: 500px;
 	background:  url(../public/assets/image23.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .Cat-imagen3{
   height: 500px;
 	background:  url(../public/assets/2-imagen-swiper.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .Cat-imagen4{
   height: 500px;
 	background:  url(../public/assets/3-imagen-swiper.png) center center / cover no-repeat;
-  margin-bottom: 56px;
+
 }
 .Cat-imagen5{
   height: 500px;
 	background:  url(../public/assets/4-imagen-swiper.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-1{
   height: 500px;
 	background:  url(../public/assets/2-swiper-1.png) center center / cover no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-2{
   height: 500px;
 	background:  url(../public/assets/2-swiper-2.png) center center / contain no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-3{
   height: 500px;
 	background:  url(../public/assets/2-swiper-3.png) center center / contain no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-4{
   height: 500px;
 	background:  url(../public/assets/2-swiper-4.png) center center / contain no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-5{
   height: 500px;
 	background:  url(../public/assets/2-swiper-5.png) center center / contain no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-6{
   height: 500px;
 	background:  url(../public/assets/2-swiper-6.png) center center / contain  no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-7{
   height: 500px;
 	background:  url(../public/assets/2-swiper-7.png) center center / contain no-repeat;
-  margin-bottom: 56px;
 }
 .swiper2-8{
   height: 500px;
 	background:  url(../public/assets/2-swiper-8.png) center center / contain  no-repeat;
-  margin-bottom: 56px;
-}
-/*  intentar borrar nose porque  mb-40 no anda con bootstrap */
-.margin-abajo{
-  margin-bottom: 40px;
 }
 .swiper-button-next{ 
   width: 48px !important;
@@ -226,10 +165,6 @@ h2{
   height: 10px !important;
   background: rgba(255, 186, 66, 1) !important;
   border-radius: 30% !important;
-}
-/*  intentar borrar nose porque  mb-56 no anda con bootstrap */
-.prueba{
-  margin-bottom: 56px;
 }
 .mySwiper2{
   .swiper-button-next{ 
@@ -286,7 +221,6 @@ h2{
   height: 116px;
   width: 196px;
 	background:  url(../public/assets/new-sin.png) center center / contain  no-repeat;
-  margin-bottom: 56px;
 }
 .new:hover{
   height: 116px;
@@ -426,16 +360,12 @@ h2{
 @media (max-width: 768px){
   .imagen-de-video{
     height: 394px;
-    margin-top: 56px;
-    margin-bottom: 56px;
     background:  url(../public/assets/Frame940.png) center center  no-repeat ;
   }
 }
 @media (max-width: 320px){
   .imagen-de-video{
     height: 222px;
-    margin-top: 56px;
-    margin-bottom: 56px;
     background:  url(../public/assets/Frame940.png) center center  no-repeat ;
   }
 }
