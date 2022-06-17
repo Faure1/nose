@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination,Navigation  } from "swiper";
 import {Nosotros} from '../../profile'
 import {Brands} from '../../profile'
-
+import {Brands2} from '../../profile'
 
 
 const Body = () => {
@@ -334,44 +334,7 @@ const Body = () => {
                     </div>
             </Container>
             {/* Swiper de Y mucho mas*/}     
-            <Swiper slidesPerView={6} spaceBetween={30} centeredSlides={false} modules={[ ]} className="mySwiper">
-                <SwiperSlide>
-                    <div >
-                        <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
-                        <p className='d-flex justify-content-center'>Rodillo compactador</p> 
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div>
-                        <Image src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Dumper</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div>
-                        <Image src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Hormigonera todo terreno</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div>
-                        <Image src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Camion bomba de hormigon </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div>
-                        <Image src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Camiones volquetes articulados </p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div>
-                        <Image src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
-                        <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
-                    </div>
-                </SwiperSlide>
-            </Swiper>
+            <Brands2></Brands2>
             {/* Marcas comerciales*/}
             <div >
                 <h1 className="text-dark d-flex justify-content-center quienes-somos mt-5">Marcas comerciales</h1>

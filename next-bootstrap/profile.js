@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container,Image } from "react-bootstrap";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay,Grid } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -52,6 +52,72 @@ export const Navar = [
     },
 
 ]
+
+export const Brands2 =() => {
+    return(
+        <Swiper 
+        modules={[Navigation, Pagination, A11y]}
+        spaceBetween={10}
+        slidesPerView={1}
+        centeredSlides={false}
+        breakpoints={{
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1440: {
+            slidesPerView: 6,
+            spaceBetween: 24,
+          },
+          1920: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
+        className="mySwiper">
+                <SwiperSlide>
+                    <div >
+                        <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
+                        <p className='d-flex justify-content-center'>Rodillo compactador</p> 
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <Image src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Dumper</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <Image src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Hormigonera todo terreno</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <Image src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Camion bomba de hormigon </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <Image src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Camiones volquetes articulados </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div>
+                        <Image src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+    )
+}
+
+
+
+
 
 export const Brands = () => {
   return (
