@@ -6,6 +6,7 @@ import { Controller, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination,Navigation  } from "swiper";
 import {Nosotros} from '../../profile'
+import {Brands} from '../../profile'
 
 
 
@@ -379,51 +380,7 @@ const Body = () => {
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/*Swiper de  Marcas comerciales*/}
-            <Swiper slidesPerView={10} loop={true} spaceBetween={30} centeredSlides={true} autoplay={{ delay: 1500, disableOnInteraction: false}} modules={[Autoplay ]}
-             className="mySwiper3 mt-3" >
-                <SwiperSlide>
-                    <div className='new'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='bobcat'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='case'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='cat'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='cater'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='doosan'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='hitachi'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='hyundai'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='jcb'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='john'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='komatsu'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='kubata'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='liebherr'> </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='volvo'> </div>
-                </SwiperSlide>
-            </Swiper>
+            <Brands></Brands>
             {/* Recien vendida*/}
             <div >
                 <h1 className="text-dark d-flex justify-content-center mt-10">Recien vendida</h1>
