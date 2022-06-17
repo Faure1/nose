@@ -274,7 +274,7 @@ const Body = () => {
                                 <div className="swiper2-2 w-100" > </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div className="swiper2-3 w-100" > </div>
+                                <div className="swiper2-3 w-100" >  </div>
                             </SwiperSlide>
                             <SwiperSlide >
                                 <div className="swiper2-4 w-100" > </div>
@@ -309,7 +309,7 @@ const Body = () => {
             <div className=' d-flex justify-content-center'>
                 <Button className=' justify-content-center' variant="dark">contactanos</Button>
             </div>
-            {/* Nosotros te lo conseguimos - imagenes*/}
+            {/* Nosotros te lo conseguimos-imagenes*/}
             <Container  > 
                 <Row>
                 {
