@@ -5,8 +5,7 @@ import {Button, Container, Row} from 'react-bootstrap'
 import { Controller, Grid } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination,Navigation  } from "swiper";
-
-import {Brands, Gruas1, Brands2, Nosotros} from '../../profile'
+import {Brands, Gruas1,Gruas2,Gruas3,Gruas4, Brands2, Nosotros} from '../../profile'
 
 
 
@@ -102,55 +101,46 @@ const Body = () => {
                         <div className='col-12'>
                             <Row >
                                 <div className='d-flex justify-content-center'>
-                                    <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
+                                    <h1 className='titulos-venta text-center'>Gruas de marca Link Belt</h1>
                                 </div>
-                
                             </Row>
                             {
                             Gruas1.map(({variable, content}, i) =>(
-                                <Row>
-                                    <div className='d-flex justify-content-center'>
-                                        <div className='d-flex '>
-                                            <div className=' order-0 w-20 '>
-                                                <div className='div-info-lado '>
-                                                    <p className='lado-izquierdo d-inline text-secondary'>{variable}</p>
+                                <Row className='d-flex justify-content-center'>
+                                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
+                                        <div className=' me-auto mx-auto '>
+                                            <div className='d-flex '>
+                                                <div className=' order-0 w-20 'style={{width: 70}}>
+                                                    <div className='div-info-lado'>
+                                                        <p className='lado-izquierdo d-inline'>{variable} </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                                <div className='order-1 div-info-lado '>
-                                                    <div className='div-info-lado '>
-                                                        <p className='lado-izquierdo d-inline ' >{content}</p>
+                                                <div className='order-1   d-flex  ' style={{width: 190}}>
+                                                    <div className='div-info-lado'>
+                                                        <p className='lado-izquierdo d-inline'> {content} </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </Row>
+                                    </div>
+                                </Row>
                                 ))       
                             }
                             <div className='d-flex justify-content-center'>
-                                <div className='div-info-lado'>
+                                <div className='div-info-lado '>
                                     <Button variant="dark">contactanos</Button>
                                 </div>
                                 <div className='div-info-lado'>
                                     <Button variant="light">Ficha tecnica</Button>
                                 </div>                        
                             </div>
-
-
-
-
                         </div>
                     </div>
-
-
-
-
-
-
-    <div className="col-12 order-0 order-lg-0 col-lg-6  espacio-abajo">
+    <div className="col-12 order-0 order-lg-0 col-lg-6  mb-5">
         <Swiper pagination={true} navigation= {true} modules={[Pagination, Navigation ]} className="mySwiper">
             <a  href='https://www.facebook.com/watch/?v=521585079352621'>
                 <SwiperSlide >
-                    <div className="Cat-imagen2 w-100" >
+                    <div className="Cat-imagen2 mb-5 w-100" >
                         <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
                             <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                         </div>
@@ -158,21 +148,21 @@ const Body = () => {
                 </SwiperSlide>
             </a>
             <SwiperSlide>
-                <div className="Cat-imagen3 w-100" >
+                <div className="Cat-imagen3 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="Cat-imagen4 w-100" >
+                <div className="Cat-imagen4 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="Cat-imagen5 w-100" >
+                <div className="Cat-imagen5 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
                         <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
@@ -191,89 +181,93 @@ const Body = () => {
                 </div>
             </Container>
             {/* segunda MAQUINA VENTA*/}
-            <Container className="margin-bottom-56px">
-                <Row>
-                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center mb-5 ">
-                        <div className='col-12 '>
-                            <div>
-                                <h1 className='titulos-venta'>Excavadora CAT 336 ELH</h1>
-                            </div>
-                            <div className='d-flex justify-content-center'>
-                                <div className=' order-0 w-20'>
+            <Container className='mb-3'>
+<Row >
+    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6  align-items-center">
+        <div className='col-12'>
+            <Row >
+                <div className='d-flex justify-content-center'>
+                    <h1 className='titulos-venta text-center'>Excavadora CAT 336 ELH</h1>
+                </div>
+            </Row>
+            {
+             Gruas2.map(({variable, content}, i) =>(
+                <Row className='d-flex justify-content-center'>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
+                        <div className=' me-auto mx-auto '>
+                            <div className='d-flex '>
+                                <div className=' order-0 w-20 'style={{width: 70}}>
                                     <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Año:</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Odómetro:</p>   
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Condición:</p>
-                                    </div>    
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Precio:</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <Button variant="dark">contactanos</Button>            
+                                        <p className='lado-izquierdo d-inline'>{variable} </p>
                                     </div>
                                 </div>
-                                <div className='order-1 div-info-lado'>
+                                <div className='order-1   d-flex  ' style={{width: 190}}>
                                     <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  2013</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  -</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  usada,Perfecto estado.</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  $145,000 USD</p>
+                                        <p className='lado-izquierdo d-inline'> {content} </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
-                        <div className="Cat-imagen mb-5">
-                            <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
-                                <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                             </div>
                         </div>
                     </div>
                 </Row>
-            </Container>
+                ))       
+            }
+            <div className='d-flex justify-content-center'>
+                <div className='div-info-lado '>
+                    <Button variant="dark">contactanos</Button>
+                </div>                     
+            </div>
+        </div>
+    </div>
+    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
+        <div className="Cat-imagen mb-5">
+            <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
+                <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+            </div>
+        </div>
+    </div>
+</Row>
+</Container>
             {/* Tercer MAQUINARIA EN VENTA*/}
-            <Container className="margin-bottom-56px">
-                <Row >
-                    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6 text-center align-items-center">
-                        <div className='col-12 '>
-                            <div>
-                                <h1 className='titulos-venta'>Gruas de marca Link Belt</h1>
-                            </div>
-                            <div className='d-flex justify-content-center'>
-                                <div className=' order-0 w-20'>
+            <Container>
+<Row >
+    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6  align-items-center">
+        <div className='col-12'>
+            <Row >
+                <div className='d-flex justify-content-center'>
+                    <h1 className='titulos-venta text-center'>Gruas de marca Link Belt</h1>
+                </div>
+            </Row>
+            {
+            Gruas3.map(({variable, content}, i) =>(
+                <Row className='d-flex justify-content-center'>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
+                        <div className=' me-auto mx-auto '>
+                            <div className='d-flex '>
+                                <div className=' order-0 w-20 'style={{width: 70}}>
                                     <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline' >Capacidad:</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Condición:</p>   
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <Button variant="dark">contactanos</Button>
+                                        <p className='lado-izquierdo d-inline'>{variable} </p>
                                     </div>
                                 </div>
-                                <div className='order-1 div-info-lado'>
+                                <div className='order-1   d-flex  ' style={{width: 190}}>
                                     <div className='div-info-lado'>
-                                        <h2 className='lado-izquierdo d-inline'>  Desde 20 a 80 toneladas. </h2>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <h2 className='lado-izquierdo d-inline'>  USADA, Perfecto estado.</h2>
+                                        <p className='lado-izquierdo d-inline'> {content} </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-0 col-lg-6 mb-5 ">
+                </Row>
+                ))       
+            }
+            <div className='d-flex justify-content-center'>
+                <div className='div-info-lado '>
+                    <Button variant="dark">contactanos</Button>
+                </div>                     
+            </div>
+        </div>
+    </div>
+    <div className="col-12 order-0 order-lg-0 col-lg-6 mb-5 ">
                         <Swiper pagination={true} navigation={true} slidesPerView={1} spaceBetween={20} centeredSlides={true} modules={[Pagination, Navigation]} className="mySwiper">
                             <SwiperSlide >
                                 <div className="swiper2-1 mb-5 w-100" >
@@ -305,11 +299,11 @@ const Body = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                </Row>
-            </Container>       
+</Row>
+</Container>      
             {/* Nosotros te lo conseguimos*/}
             <div >
-                <h1 className="text-dark d-flex justify-content-center mt-5 quienes-somos">Nosotros te lo conseguimos</h1>
+                <h1 className="text-dark d-flex justify-content-center text-center mt-5 quienes-somos">Nosotros te lo conseguimos</h1>
             </div>
             <div className='d-flex justify-content-center'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
@@ -326,7 +320,7 @@ const Body = () => {
                 <Row>
                 {
                     Nosotros.map(({img, text}, i) =>(
-                        <div className='col-6'>
+                        <div className='col-lg-6 col-12'>
                             <div className='d-flex justify-content-center mt-4  '>
                                 <Image src={img} width={600} height={326} layout='intrinsic' ></Image>
                             </div>
@@ -357,63 +351,59 @@ const Body = () => {
             <Brands></Brands>
             {/* Recien vendida*/}
             <div >
-                <h1 className="text-dark d-flex justify-content-center mt-10">Recien vendida</h1>
+                <h1 className="text-dark d-flex justify-content-center mt-10 quienes-somos">Recien vendida</h1>
             </div>
             <div className='d-flex justify-content-center mb-5'>
                 <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Recien vendida container*/}
-            <Container >
-                <Row>
-                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center">
-                        <div className='col-12 '>
-                            <div>
-                                <h1 className='titulos-venta'>Retroexcavadora CASE  570MXT 4x4 cargador basculante</h1>
-                            </div>
-                            <div className='d-flex justify-content-center'>
-                                <div className=' order-0 w-20'>
+            <Container>
+<Row >
+    <div className=" d-flex col-12 order-1 order-lg-1 col-lg-6  align-items-center">
+        <div className='col-12'>
+            <Row >
+                <div className='d-flex justify-content-center'>
+                    <h1 className='titulos-venta text-center'>Retroexcavadora CASE  570MXT 4x4 cargador basculante</h1>
+                </div>
+            </Row>
+            {
+            Gruas4.map(({variable, content}, i) =>(
+                <Row className='d-flex justify-content-center'>
+                    <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
+                        <div className=' me-auto mx-auto '>
+                            <div className='d-flex '>
+                                <div className=' order-0 w-20 'style={{width: 70}}>
                                     <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline' >Año:</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                     <p className='lado-izquierdo d-inline'>Odómetro:</p>   
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Condición:</p>
-                                    </div>    
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>Precio:</p>
-                                    </div>
-                                    <div>
-                                        <h2 className='titulos-venta'>Vendido</h2>
+                                        <p className='lado-izquierdo d-inline'>{variable} </p>
                                     </div>
                                 </div>
-                                <div className='order-1 div-info-lado'>
+                                <div className='order-1   d-flex  ' style={{width: 190}}>
                                     <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  2011</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>4,300 horas</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  usada,Perfecto estado.</p>
-                                    </div>
-                                    <div className='div-info-lado'>
-                                        <p className='lado-izquierdo d-inline'>  $55,000 USD</p>
+                                        <p className='lado-izquierdo d-inline'> {content} </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
+                </Row>
+                ))       
+            }
+            <div className='d-flex justify-content-center'>
+                <div className='div-info-lado '>
+                    <h2 className='titulos-venta'>Vendido</h2>
+                </div>                     
+            </div>
+        </div>
+    </div>
+    <div className="col-12 order-0 order-lg-1 col-lg-6 ">
                         <div className="vendido-imagen mb-5 mt-5">
                             <div className=' w-100 h-100 d-flex  align-items-start justify-content-start '>
                                 <Image  src='/assets/logo-vendido.png'  width={158} height={161} layout='intrinsic'></Image>
                             </div>
                         </div>
                     </div>
-                </Row>
-            </Container>         
+</Row>
+</Container>         
             {/* testimonios*/}
             <div className='mt-5' >
                 <h1 id='testimonios' className="text-dark d-flex justify-content-center quienes-somos  ">Testimonios</h1>
