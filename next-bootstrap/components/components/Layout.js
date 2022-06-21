@@ -18,8 +18,8 @@ const Layout = ({children}) => {
             <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
               <Nav className="me-auto mx-auto d-flex  ">
                 {
-                  Navar.map(({texto, clas, href}, i) =>(
-                    <div className='text-center'>
+                  Navar.map(({texto, clas, href}, i,index) =>(
+                    <div className='text-center' key={index}>
                       <Nav.Link className= {clas} href= {href}>{texto}</Nav.Link>
                     </div>
                   ))

@@ -39,7 +39,7 @@ const Body = () => {
             </div>
             {/* QUIENES SOMOS CONTENEDOR*/}
             <Container className="mt-5 mb-5">
-                <Row>   
+                <Row>
                     <div className="col-12 order-1 order-lg-0 col-lg-6 d-flex  justify-content-center align-items-center ">
                         <div >
                             <div className='text-center'>
@@ -52,7 +52,7 @@ const Body = () => {
                     </div>
                     <div className="col-12 order-0 order-lg-1 col-lg-6  mb-5 ">
                         <div>
-                            <img src="./assets/2imagen.png" className="w-100 h-auto "/>
+                            <Image alt="maquinas" src='/assets/2imagen.png'  width={600} height={400} layout='intrinsic'></Image>
                         </div>
                     </div>
                 </Row>
@@ -105,8 +105,8 @@ const Body = () => {
                                 </div>
                             </Row>
                             {
-                            Gruas1.map(({variable, content}, i) =>(
-                                <Row className='d-flex justify-content-center'>
+                            Gruas1.map(({variable, content}, i,index) =>(
+                                <Row className='d-flex justify-content-center' key={index}>
                                     <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
                                         <div className=' me-auto mx-auto '>
                                             <div className='d-flex '>
@@ -176,7 +176,7 @@ const Body = () => {
             <Container>
                 <div className='col-12 imagen-de-video mb-5 mt-5 d-flex  '>
                     <Container className=' d-flex justify-content-center text-center align-items-center'>
-                        <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' rel="noopener noreferrer" className='boton-video'> <Button   variant="light"> <Image src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
+                        <a target="_blank" href='https://www.facebook.com/watch/?v=521585079352621' rel="noopener noreferrer" className='boton-video'> <Button   variant="light"> <Image alt='maquinas' src='/assets/play.png'  width={100} height={58} layout='intrinsic'></Image> </Button></a>
                     </Container>
                 </div>
             </Container>
@@ -191,8 +191,8 @@ const Body = () => {
                 </div>
             </Row>
             {
-             Gruas2.map(({variable, content}, i) =>(
-                <Row className='d-flex justify-content-center'>
+             Gruas2.map(({variable, content}, i,index) =>(
+                <Row className='d-flex justify-content-center' key={index}>
                     <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
                         <div className=' me-auto mx-auto '>
                             <div className='d-flex '>
@@ -239,8 +239,8 @@ const Body = () => {
                 </div>
             </Row>
             {
-            Gruas3.map(({variable, content}, i) =>(
-                <Row className='d-flex justify-content-center'>
+            Gruas3.map(({variable, content}, i,index) =>(
+                <Row className='d-flex justify-content-center' key={index}>
                     <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
                         <div className=' me-auto mx-auto '>
                             <div className='d-flex '>
@@ -319,8 +319,8 @@ const Body = () => {
             <Container  > 
                 <Row>
                 {
-                    Nosotros.map(({img, text}, i) =>(
-                        <div className='col-lg-6 col-12'>
+                    Nosotros.map(({img, text}, i,index) =>(
+                        <div className='col-lg-6 col-12' key={index}>
                             <div className='d-flex justify-content-center mt-4  '>
                                 <Image alt="maquinas" src={img} width={600} height={326} layout='intrinsic' ></Image>
                             </div>
@@ -367,8 +367,8 @@ const Body = () => {
                 </div>
             </Row>
             {
-            Gruas4.map(({variable, content}, i) =>(
-                <Row className='d-flex justify-content-center'>
+            Gruas4.map(({variable, content}, i,index) =>(
+                <Row className='d-flex justify-content-center' key={index}>
                     <div className=" d-flex col-12 order-1 order-lg-0 col-lg-6 text-center align-items-center  ">
                         <div className=' me-auto mx-auto '>
                             <div className='d-flex '>
