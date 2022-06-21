@@ -35,7 +35,7 @@ const Body = () => {
                 <h1 id='Quienessomos' className="text-dark d-flex justify-content-center quienes-somos mt-5">¿Quienes somos?</h1>
             </div>
             <div className='d-flex justify-content-center'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* QUIENES SOMOS CONTENEDOR*/}
             <Container className="mt-5 mb-5">
@@ -67,12 +67,12 @@ const Body = () => {
                     </Row>
                     <Row className='d-flex justify-content-center align-items-center text-center mb-4'>
                         <div>
-                            <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                            <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
                         </div>
                     </Row>
                     <Row className='d-flex justify-content-center text-center align-items-center mt-3 mb-4 '>
                         <div >
-                            <Image src='/assets/excavator.png'  width={56} height={54} layout='intrinsic'></Image>
+                            <Image alt="maquinas" src='/assets/excavator.png'  width={56} height={54} layout='intrinsic'></Image>
                         </div>
                     </Row>
                     <Row  className='d-flex justify-content-center text-center align-items-center mt-3 '>
@@ -92,7 +92,7 @@ const Body = () => {
                 <h1 id='maquinarias' className="text-dark d-flex justify-content-center mt-5 quienes-somos">Maquinaria en venta</h1>
             </div>
             <div className='d-flex justify-content-center mb-5'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Primer MAQUINARIA EN VENTA*/}
             <Container>
@@ -142,7 +142,7 @@ const Body = () => {
                 <SwiperSlide >
                     <div className="Cat-imagen2 mb-5 w-100" >
                         <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
-                            <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                            <Image alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -150,21 +150,21 @@ const Body = () => {
             <SwiperSlide>
                 <div className="Cat-imagen3 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
-                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                        <Image  alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="Cat-imagen4 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end '>
-                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="Cat-imagen5 mb-5 w-100" >
                     <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
-                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                     </div>
                  </div>
             </SwiperSlide>
@@ -222,7 +222,7 @@ const Body = () => {
     <div className="col-12 order-0 order-lg-1 col-lg-6 ">
         <div className="Cat-imagen mb-5">
             <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
-                <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
             </div>
         </div>
     </div>
@@ -272,7 +272,7 @@ const Body = () => {
                             <SwiperSlide >
                                 <div className="swiper2-1 mb-5 w-100" >
                                     <div className='w-100 h-100 d-flex align-items-end justify-content-end'>
-                                        <Image  src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
+                                        <Image alt="maquinas" src='/assets/Frame962.png'  width={184} height={84} layout='intrinsic'></Image>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -306,7 +306,7 @@ const Body = () => {
                 <h1 className="text-dark d-flex justify-content-center text-center mt-5 quienes-somos">Nosotros te lo conseguimos</h1>
             </div>
             <div className='d-flex justify-content-center'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             <div className='mt-4 text-center align-items-center '>
                 <p className=' d-flex justify-content-center '>¿Tienes un proyecto y necesitas maquinaria pesada de segunda mano?  </p>
@@ -322,12 +322,12 @@ const Body = () => {
                     Nosotros.map(({img, text}, i) =>(
                         <div className='col-lg-6 col-12'>
                             <div className='d-flex justify-content-center mt-4  '>
-                                <Image src={img} width={600} height={326} layout='intrinsic' ></Image>
+                                <Image alt="maquinas" src={img} width={600} height={326} layout='intrinsic' ></Image>
                             </div>
                             <div className='d-flex justify-content-center'>
                                 <h3 className='text-dark  py-2'>{text}</h3>
                             </div>
-                        </div>                           
+                        </div>
                     ))
                 }
                 </Row>
@@ -345,7 +345,7 @@ const Body = () => {
                 <h1 className="text-dark d-flex justify-content-center quienes-somos mt-5">Marcas comerciales</h1>
             </div>
             <div className='d-flex justify-content-center mb-4'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image  alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/*Swiper de  Marcas comerciales*/}
             <Brands></Brands>
@@ -354,7 +354,7 @@ const Body = () => {
                 <h1 className="text-dark d-flex justify-content-center mt-10 quienes-somos">Recien vendida</h1>
             </div>
             <div className='d-flex justify-content-center mb-5'>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Recien vendida container*/}
             <Container>
@@ -391,25 +391,25 @@ const Body = () => {
             <div className='d-flex justify-content-center'>
                 <div className='div-info-lado '>
                     <h2 className='titulos-venta'>Vendido</h2>
-                </div>                     
+                </div>
             </div>
         </div>
     </div>
     <div className="col-12 order-0 order-lg-1 col-lg-6 ">
                         <div className="vendido-imagen mb-5 mt-5">
                             <div className=' w-100 h-100 d-flex  align-items-start justify-content-start '>
-                                <Image  src='/assets/logo-vendido.png'  width={158} height={161} layout='intrinsic'></Image>
+                                <Image alt="maquinas" src='/assets/logo-vendido.png'  width={158} height={161} layout='intrinsic'></Image>
                             </div>
                         </div>
                     </div>
 </Row>
-</Container>         
+</Container>
             {/* testimonios*/}
             <div className='mt-5' >
                 <h1 id='testimonios' className="text-dark d-flex justify-content-center quienes-somos  ">Testimonios</h1>
             </div>
             <div className='d-flex justify-content-center mb-4 '>
-                <Image src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
+                <Image alt="maquinas" src='/assets/vector 12.png'  width={214} height={4} layout='intrinsic'></Image>
             </div>
             {/* Swiper de testimonios*/}
             <Container className=" mb-5 ">
@@ -426,28 +426,28 @@ const Body = () => {
                                     <Row>
                                         <div className=' d-flex justify-content-center'>
                                             <div>
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                         </div>
-                                    </Row>  
+                                    </Row> 
                                     <div className=' d-flex justify-content-center text-center align-items-center  '>
                                         <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
                                             <p>
                                                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
                                             </p>
-                                         </div>
+                                        </div>
                                     </div>
                                 </Container>
                             </SwiperSlide>
@@ -461,28 +461,28 @@ const Body = () => {
                                     <Row>
                                         <div className=' d-flex justify-content-center'>
                                             <div>
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic' ></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic' ></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                         </div>
-                                    </Row>  
+                                    </Row>
                                     <div className=' d-flex justify-content-center align-items-center text-center '>
                                         <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
                                             <p>
                                                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
                                             </p>
-                                         </div>
+                                        </div>
                                     </div>
                                 </Container>
                             </SwiperSlide>
@@ -496,28 +496,28 @@ const Body = () => {
                                     <Row>
                                         <div className=' d-flex justify-content-center'>
                                             <div>
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                         </div>
-                                    </Row>  
+                                    </Row>
                                     <div className=' d-flex justify-content-center align-items-center text-center '>
                                         <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
                                             <p>
                                                 Realmente no estoy del todo comodo todavia, pero debo admitir que a un nivel objetivo alcanza las espectativas, y de hecho en un futuro espero poder realizar mas negocos. 
                                             </p>
-                                         </div>
+                                        </div>
                                     </div>
                                 </Container>
                             </SwiperSlide>
@@ -531,31 +531,31 @@ const Body = () => {
                                     <Row>
                                         <div className=' d-flex justify-content-center'>
                                             <div>
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div className='ms-2 me-2' >
-                                                <Image src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrillita.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                             <div>
-                                                <Image src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
+                                                <Image alt="maquinas" src='/assets/estrilla-vacia.png' width={20} height={20} layout='intrinsic'></Image>
                                             </div>
                                         </div>
-                                    </Row>  
+                                    </Row>
                                     <div className=' d-flex justify-content-center align-items-center text-center '>
                                         <div className='d-flex justify-content-center text-center  align-items-center col-12 col-lg-5 '>
                                             <p>
                                                 Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner Texto por poner 
                                             </p>
-                                         </div>
+                                        </div>
                                     </div>
                                 </Container>
-                            </SwiperSlide>      
+                            </SwiperSlide>
                         </Swiper>
                     </div>
                 </Row>

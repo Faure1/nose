@@ -141,37 +141,37 @@ export const Brands2 =() => {
         className="mySwiper-4">
                 <SwiperSlide>
                     <div  className="mb-5" >
-                        <Image src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
+                        <Image alt="maquinas" src='/assets/rodillo.png'  width={220} height={207} layout='intrinsic' ></Image>
                         <p className='d-flex justify-content-center'>Rodillo compactador</p> 
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="mb-5">
-                        <Image src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/dumper.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Dumper</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="mb-5">
-                        <Image src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/Hormigonera.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Hormigonera todo terreno</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="mb-5">
-                        <Image src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <Image  alt="maquinas" src='/assets/camion-bomba.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Camion bomba de hormigon </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="mb-5">
-                        <Image src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/Camiones-volquetes.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Camiones volquetes articulado </p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="mb-5">
-                        <Image src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
+                        <Image alt="maquinas" src='/assets/Gruas-sobre-orugas.png'  width={220} height={207} layout='intrinsic'></Image>
                         <p className='d-flex justify-content-center'>Gruas sobre orugas </p> 
                     </div>
                 </SwiperSlide>
