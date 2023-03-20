@@ -135,7 +135,7 @@ const Body = () => {
                 </Row>
                 ))       
             }
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mt-2'>
                 <div className='div-info-lado '>
                     <Button variant="dark">contactanos</Button>
                 </div>                     
@@ -183,7 +183,7 @@ const Body = () => {
                 </Row>
                 ))       
             }
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mt-2'>
                 <div className='div-info-lado '>
                     <Button variant="dark">contactanos</Button>
                 </div>                     
