@@ -224,7 +224,7 @@ const Body = () => {
                     </div>
 </Row>
 </Container>      
-            {/* Nosotros te lo conseguimos*/}
+            {/* Nosotros lo conseguimos*/}
             <div >
                 <h1 className="text-dark d-flex justify-content-center text-center mt-5 quienes-somos">Nosotros te lo conseguimos</h1>
             </div>
